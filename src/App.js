@@ -1,10 +1,10 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Navbar from "./Components/Navbar/Navbar";
-import Landing from "./Components/Navbar/Landing/Landing";
+import Landing from "./Components/Landing/Landing";
 import Skills from "./Components/Navbar/Landing/Skills/Skills";
-import Projects from "./Components/Navbar/Projects/Projects";
+import Projects from "./Components/Projects/Projects";
 // import useMediaquery from "./Hooks/useMediaquery";
 
 function App() {

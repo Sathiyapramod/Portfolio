@@ -2,13 +2,6 @@ import React from "react";
 import "../Skills/Skills.css";
 import Card from "@mui/material/Card";
 import { CardContent } from "@mui/material";
-import bootstrap from "../../../../assets/bootstrap.svg";
-import css from "../../../../assets/css.svg";
-import html from "../../../../assets/html.svg";
-import javascript from "../../../../assets/javascript.svg";
-import mUI from "../../../../assets/materialui.svg";
-import react from "../../../../assets/react.svg";
-import mongoDB from "../../../../assets/mongoDB.svg";
 
 function Skills() {
   return (
@@ -39,35 +32,35 @@ function Skills() {
         {[
           {
             name: "HTML",
-            image: html,
+            image: "",
           },
           {
             name: "CSS",
-            image: css,
+            image: "css",
           },
           {
             name: "Javascript",
-            image: javascript,
+            image: "javascript",
           },
           {
             name: "BootStrap",
-            image: bootstrap,
+            image: "bootstrap",
           },
           {
             name: "MongoDB",
-            image: mongoDB,
+            image: "mongoDB",
           },
           {
             name: "React JS",
-            image: react,
+            image: "react",
           },
           {
             name: "Material UI",
-            image: mUI,
+            image: "mUI",
           },
           {
             name: "NodeJS",
-            image: mUI,
+            image: "mUI",
           },
         ].map((element, index) => {
           return (

@@ -1,10 +1,9 @@
 import React from "react";
 import "../Landing/Landing.css";
-import profile from "../../../assets/profile.jpeg";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import useMediaquery from "../../../Hooks/useMediaquery";
+import useMediaquery from "../../Hooks/useMediaquery";
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -64,7 +63,17 @@ function Landing({ setSelectedPage }) {
               >
                 <Button
                   variant="outlined"
-                  sx={{ fontSize: isDesktop ? 18 : 12 }}
+                  sx={{
+                    fontSize: isDesktop ? 16 : 12,
+                    backgroundColor: "#756BEE",
+                    color: "white",
+                    fontWeight: 300,
+                    paddingLeft: 3,
+                    paddingRight: 3,
+                    "&:hover" :{
+                      backgroundColor:"black"
+                    }
+                  }}
                 >
                   Let us discuss
                 </Button>
@@ -102,7 +111,7 @@ function Landing({ setSelectedPage }) {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <img src={profile} width="350" height="450" alt="profile" />
+            <img src="" width="350" height="450" alt="profile" />
           </motion.div>
         </div>
       </div>
