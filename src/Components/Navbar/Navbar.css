@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root {
+    --navbar-ff: 'Lato', sans-serif;
+}
+
+.toggled-menu {
+    position: fixed;
+    background-color: white;
+    width: 150px;
+    height: 300px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 2px;
+    border: 0.25px solid grey;
+    z-index: 1;
+}
+
+.navbar {
+    height: 6rem;
+    width: 100vw;
+    position: fixed;
+    border: 1px solid black;
+}
+
+.menu-links {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-links:hover {
+    color: grey;
+}
+
+.corner-button {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding-top: 1rem;
+}
+
+.toggled-menu-lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    text-decoration: none;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    color: black;
+    font-family: var(--primary-ff);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}

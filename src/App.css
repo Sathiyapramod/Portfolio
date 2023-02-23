@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +38,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+.linegradient{
+  min-width:100vw;
+  border: 3px solid black;  
 }
