@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // import { motion } from "framer-motion";
 import Navbar from "./Components/Navbar/Navbar";
 import Landing from "./Components/Landing/Landing";
-import Skills from "./Components/Navbar/Landing/Skills/Skills";
+import Skills from "./Components/Skills/Skills"
 import Projects from "./Components/Projects/Projects";
 // import useMediaquery from "./Hooks/useMediaquery";
 

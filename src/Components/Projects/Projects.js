@@ -4,6 +4,7 @@ import { Lists } from "./lists";
 import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 function Projects() {
   return (
@@ -15,13 +16,16 @@ function Projects() {
       <div className="project-description">
         {Lists.map((project, index) => {
           return (
-            <Paper key={index} sx={{ width: 400 }} elevation={6}>
+            <Paper
+              key={index}
+              sx={{ width: { xs: 300, sm: 425 } }}
+              elevation={6}
+            >
               <div>
                 <img
                   src={project.image}
                   alt={project.alt}
-                  width="400px"
-                  height="300px"
+                  className="project-image"
                 />
               </div>
               <div className="titleblock">{project.title}</div>
@@ -31,9 +35,10 @@ function Projects() {
                   variant="contained"
                   sx={{
                     backgroundColor: "#756BEE",
-                    fontWeight: 300,
-                    paddingLeft: 3,
-                    paddingRight: 3,
+                    fontWeight: 500,
+                    gap: 1,
+                    paddingLeft: { xs: 1, sm: 3 },
+                    paddingRight: { xs: 1, sm: 3 },
                     "&:hover": {
                       backgroundColor: "black",
                     },
@@ -50,13 +55,13 @@ function Projects() {
                     "&:hover": {
                       backgroundColor: "black",
                       fontWeight: 300,
-                      paddingLeft: 3,
-                      paddingRight: 3,
+                      paddingLeft: { xs: 1, sm: 3 },
+                      paddingRight: { xs: 1, sm: 3 },
                     },
                   }}
                 >
-                  <GitHubIcon />
                   Go Live
+                  <ArrowOutwardIcon />
                 </Button>
               </div>
             </Paper>

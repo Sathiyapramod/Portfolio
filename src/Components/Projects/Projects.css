@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --projects-ff: 'Lato', serif;
+}
+
+
 .project-content {
     display: flex;
     flex-direction: column;
@@ -5,6 +12,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem;
+    font-family: var(--skills-ff);
 }
 
 .project-title {
@@ -25,6 +33,7 @@
 .header {
     font-size: 1.8rem;
     font-weight: 600;
+    font-family: var(--projects-ff);
 }
 
 .sub-header {
@@ -46,8 +55,33 @@
     font-weight: 400;
     padding: 0.5rem 0 0.5rem 0;
 }
-.project-text{
+
+.project-text {
     font-size: 1rem;
     font-weight: 300;
     padding: 0.3rem 0 0.5rem 0;
+}
+
+.project-image {
+    width: 400px;
+    height: 300px;
+}
+
+@media screen and (min-Width:100px) and (max-Width:600px) {
+    .project-image {
+        width: 300px;
+        height: 200px;
+    }
+
+    .titleblock {
+        font-size: 1.0rem;
+        font-weight: 600;
+        padding: 0.4rem 0 0.4rem 0;
+    }
+
+    .project-text {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0.3rem 0 0.5rem 0;
+    }
 }
