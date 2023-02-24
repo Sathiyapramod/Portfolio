@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
+
+:root {
+    --footer-ff: 'Hanken Grotesk', sans-serif;
+}
+
+.footer > span {
+    margin-inline: auto;
+    padding: 1rem;
+    font-family: var(--footer-ff);
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.external-links{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.copyrights{
+    font-size: large;
+    font-weight: lighter;
+}
+.responsive-buttons:hover{
+    transform: scale(1.2);
+}
+.basicform{
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    font-family: var(--footer-ff);
+}
+
+@media screen and (max-width:1200px) and (min-width:150px){
+    .footer > span {
+        margin-inline: auto;
+        padding: 0.5rem;
+        font-family: var(--footer-ff);
+        font-size: 2rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .external-links{
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+}

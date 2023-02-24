@@ -7,61 +7,19 @@ import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
-  const lowercasePage = page.toLowerCase();
-  return (
-    <AnchorLink
-      className={
-        selectedPage === page
-          ? "text-dark menu-links"
-          : "text-black-50 menu-links"
-      }
-      href={`#${lowercasePage}`}
-      onClick={() => {
-        setSelectedPage(page);
-      }}
-    >
-      {page}
-    </AnchorLink>
-  );
-};
-
 function Navbar({ isTopofPage, selectedPage, setSelectedPage }) {
-  const isDesktop = useMediaquery("(min-width:1024px)");
   const [isMenuToggled, setMenuToggled] = useState(false);
-  const navbarbackground = isTopofPage ? "" : "bg-light";
-
+  const isDesktop = useMediaquery("(min-width:768px)");
   return (
     <div>
       {isDesktop ? (
-        <div className={`${navbarbackground} navbar`}>
-          <div className="logo ps-3 text-secondary-emphasis">LOGO</div>
-          <div className="menu-links d-flex flex-row justify-content-center gap-3 align-items-center pe-3">
-            <Link
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Skills"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Testimonials"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Contact"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-          </div>
+        <div className={`navbar`}>
+          <div className="logo ps-3">Sathiyapramod</div>
+          <div className="menu-links d-flex flex-row justify-content-center gap-2 align-items-center pe-5"></div>
         </div>
       ) : (
         <div className="navbar">
-          <div className="logo text-secondary-emphasis ps-3">LOGO</div>
+          <div className="logo text-secondary-emphasis ps-3">S</div>
           <div className="menu-toggled">
             <Button
               variant="text"

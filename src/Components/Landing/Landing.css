@@ -11,7 +11,7 @@
     align-items: center;
     flex-wrap: wrap;
     font-family: var(--landing-ff);
-    padding-top: 8rem ;
+    padding: 8rem;
 }
 
 .landing-content {
@@ -57,6 +57,10 @@
     gap: 2rem;
 }
 
+.landing-button {
+    padding: 1rem 0 1rem 0;
+}
+
 @media screen and (min-width: 200px) and (max-width:768px) {
     .landing {
         display: flex;
@@ -84,7 +88,7 @@
 
     img {
         width: 250px;
-        height: 300px;
+        height: 350px;
     }
 
 }

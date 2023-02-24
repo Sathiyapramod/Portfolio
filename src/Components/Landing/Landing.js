@@ -2,13 +2,13 @@ import React from "react";
 import "../Landing/Landing.css";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaquery from "../../Hooks/useMediaquery";
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import profile from "../../../src/assets/profilePic.jpeg";
 
-function Landing({ setSelectedPage }) {
+function Landing() {
   const isDesktop = useMediaquery("(min-width:768px)");
   //   console.log(isDesktop);
   return (
@@ -43,7 +43,7 @@ function Landing({ setSelectedPage }) {
               blended with knowledge of Front-end and NodeJS elements{" "}
             </span>
           </motion.div>
-          <span>
+          <span className="landing-button">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -54,30 +54,22 @@ function Landing({ setSelectedPage }) {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <AnchorLink
-                className="menu-links"
-                href="#contact"
-                onClick={() => {
-                  setSelectedPage("contact");
+              <Button
+                variant="outlined"
+                sx={{
+                  fontSize: isDesktop ? 16 : 12,
+                  backgroundColor: "#756BEE",
+                  color: "white",
+                  fontWeight: 500,
+                  paddingLeft: 3,
+                  paddingRight: 3,
+                  "&:hover": {
+                    backgroundColor: "black",
+                  },
                 }}
               >
-                <Button
-                  variant="outlined"
-                  sx={{
-                    fontSize: isDesktop ? 16 : 12,
-                    backgroundColor: "#756BEE",
-                    color: "white",
-                    fontWeight: 300,
-                    paddingLeft: 3,
-                    paddingRight: 3,
-                    "&:hover" :{
-                      backgroundColor:"black"
-                    }
-                  }}
-                >
-                  Let us discuss
-                </Button>
-              </AnchorLink>
+                Let us discuss
+              </Button>
             </motion.div>
           </span>
           <span className="links">
@@ -111,7 +103,9 @@ function Landing({ setSelectedPage }) {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <img src="" width="350" height="450" alt="profile" />
+            <div className="img-thumbnail">
+              <img src={profile} width="250" height="300" alt="profile" />
+            </div>
           </motion.div>
         </div>
       </div>

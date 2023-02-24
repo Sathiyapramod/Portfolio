@@ -69,6 +69,15 @@ function Skills() {
               className="skill-item"
             />
           </ListItem>
+          <ListItem disablePadding>
+            <ListItemIcon>
+              <ArrowCircleRightOutlinedIcon fontSize="small" />
+            </ListItemIcon>
+            <ListItemText
+              primary="Typewriting in Senior Grade (English) - Certified from DOTE, Govt. of Tamilnadu"
+              className="skill-item"
+            />
+          </ListItem>
         </List>
       </div>
       <div className="skills-icons">
