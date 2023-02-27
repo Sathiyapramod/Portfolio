@@ -19,15 +19,15 @@ function BasicForm() {
         <form className="d-flex flex-column gap-3">
           <div className="d-flex flex-row gap-3 align-items-center">
             <label className="form-label col-3">Name</label>
-            <TextField className="form-control"></TextField>
+            <input type="text" className="form-control me-2"></input>
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
             <label className="form-label col-3">Email-Id</label>
-            <TextField className="form-control"></TextField>
+            <input type="text" className="form-control me-2"></input>
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
             <label className="form-label col-3">Message</label>
-            <TextField className="form-control" multiline rows={4}></TextField>
+            <textarea type="text" className="form-control me-2" rows="4" cols="4"/>
           </div>
           <div>
             <Button
