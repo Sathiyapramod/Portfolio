@@ -76,7 +76,7 @@ function Navbar() {
               onClick={() => {
                 setMenuToggled(!isMenuToggled);
               }}
-              sx={{ color: "black" }}
+              sx={{ color: scrollbg ? "white" : "black" }}
             >
               <MenuOpenOutlinedIcon />
             </Button>
@@ -92,7 +92,7 @@ function Navbar() {
                 onClick={() => {
                   setMenuToggled(!isMenuToggled);
                 }}
-                sx={{ color: "black" }}
+                sx={{ color: scrollbg ? "white" : "black" }}
               >
                 <CloseOutlinedIcon />
               </Button>
