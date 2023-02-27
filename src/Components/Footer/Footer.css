@@ -40,6 +40,12 @@
     font-family: var(--footer-ff);
 }
 
+.resume-link{
+    text-decoration: none;
+    
+}
+
+
 @media screen and (max-width:1200px) and (min-width:150px){
     .footer > span {
         margin-inline: auto;

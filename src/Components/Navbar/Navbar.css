@@ -25,11 +25,13 @@
 
 .menu-links {
     text-decoration: none;
-    color: black;
+    font-family: var(--navbar-ff);
+    font-size: 1.15rem;
+    color: auto;
 }
 
 .menu-links:hover {
-    color: grey;
+    text-decoration: wavy;
 }
 
 .corner-button {
@@ -49,7 +51,7 @@
     margin-top: 5rem;
     margin-left: 2rem;
     color: black;
-    font-family: var(--primary-ff);
+    font-family: var(--navbar-ff);
 }
 
 .logo {

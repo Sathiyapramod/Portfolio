@@ -20,6 +20,8 @@ const data = {
       content2: "Enrolled and Completed Javascript Learner Course",
       content3:
         "Participated in 30days Codekata Challenge organized by GUVI Geeks",
+      content4:
+        "Typewriting in Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu",
     },
     icons: {
       html: {
@@ -40,11 +42,13 @@ const data = {
       },
       MongoDB: {
         name: "MongoDB",
-        image: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png",
+        image:
+          "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png",
       },
       MongoDB: {
         name: "MongoDB",
-        image: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png",
+        image:
+          "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png",
       },
       ReactJS: {
         name: "React JS",

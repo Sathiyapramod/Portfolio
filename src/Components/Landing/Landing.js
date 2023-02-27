@@ -10,23 +10,29 @@ import profile from "../../../src/assets/profilePic.jpeg";
 
 function Landing() {
   const isDesktop = useMediaquery("(min-width:768px)");
-  //   console.log(isDesktop);
+  const anchorStyle = {
+    textDecoration: "none",
+    color: "white",
+  };
+
   return (
-    <section>
+    <section id="home">
       <div className="landing">
         <div className="landing-content">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
-            <span className="name">Sathiyapramod</span>
-          </motion.div>
+          <div className="name">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <span> 👋🏼 Sathiyapramod </span>
+            </motion.div>
+          </div>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -39,8 +45,9 @@ function Landing() {
           >
             <span className="bio">
               I am a Full Stack Developer, Enthusiastic & Competitive Team
-              player !! Presently focussed on Seeking Jobs on Web Developer ,
-              blended with knowledge of Front-end and NodeJS elements{" "}
+              player. <br />
+              Presently focussed on Seeking Jobs on Web Developer , blended with
+              knowledge of Front-end and NodeJS elements{" "}
             </span>
           </motion.div>
           <span className="landing-button">
@@ -68,7 +75,9 @@ function Landing() {
                   },
                 }}
               >
-                Let us discuss
+                <a href="#contact" style={anchorStyle}>
+                  LET'S DISCUSS
+                </a>
               </Button>
             </motion.div>
           </span>
@@ -83,11 +92,11 @@ function Landing() {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <IconButton color="inherit" sx={{ fontSize: 30 }}>
-                <GitHubIcon />
+              <IconButton color="inherit">
+                <GitHubIcon sx={{ fontSize: 30 }} />
               </IconButton>
-              <IconButton color="inherit" sx={{ fontSize: 30 }}>
-                <LinkedInIcon />
+              <IconButton color="inherit">
+                <LinkedInIcon sx={{ fontSize: 30 }} />
               </IconButton>
             </motion.div>
           </span>

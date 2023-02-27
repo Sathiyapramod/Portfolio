@@ -6,15 +6,19 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { githubLink, twitterLink, linkedinLink } from "../Navbar/general";
 import { Button } from "@mui/material";
 import BasicForm from "./BasicForm";
+import Details from './Details';
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="contact">
       <span>
         Networking is always Good <br />
         Share you feedback below
       </span>
-      <BasicForm />
+      <div className="d-flex flex-row justify-content-center align-items-center gap-3">
+        <BasicForm />
+        <Details />
+      </div>
       <div className="external-links">
         <a
           href={githubLink}
@@ -57,7 +61,7 @@ function Footer() {
         </a>
       </div>
       <div className="external-links copyrights">
-        <div>Copyrights © 2023| Sathiyapramod | All Rights Reserved </div>
+        <div> Made by Sathiyapramod with 😊 | 2023 | All Rights Reserved </div>
       </div>
     </div>
   );

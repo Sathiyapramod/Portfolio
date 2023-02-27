@@ -1,9 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 :root {
     --projects-ff: 'Lato', serif;
 }
 
+.content-banner {
+    font-size: 4rem;
+    font-family: var(--projects-ff);
+    font-weight: 600;
+    text-align: left;
+    padding: 5rem 0 0 15rem;
+}
+
+.colored {
+    background-color: #FFF9E7;
+}
 
 .project-content {
     display: flex;
@@ -13,12 +24,14 @@
     flex-wrap: wrap;
     padding: 1rem;
     font-family: var(--skills-ff);
+    background-color: #FFF9E7;
 }
 
 .project-title {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+
 }
 
 .project-description {
@@ -28,6 +41,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
+    padding: 0 0 5rem 0;
 }
 
 .header {
