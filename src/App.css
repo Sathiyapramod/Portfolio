@@ -32,11 +32,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.linegradient{
-  min-width:100vw;
-  border: 3px solid black;  
+
+.linegradient {
+  min-width: 100vw;
+  border: 3px solid black;
 }
