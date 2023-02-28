@@ -32,13 +32,16 @@ function Skills() {
           <div className="certifications">
             <div className="certifications">
               {[
-                "Full Stack Development - BootStrap course - currently pursuing",
-                "Enrolled and Completed Javascript Learner Course",
+                "Currently pursuing Full Stack Development - BootCamp course at GUVI Geeks",
+                "Enrolled and Completed Javascript Learner Course from GUVI",
                 "Participated in 30days Codekata Challenge organized by GUVI Geeks",
                 "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu",
               ].map((content, index) => {
                 return (
-                  <div className="skill-content d-flex flex-row gap-3" key={index}>
+                  <div
+                    className="skill-content d-flex flex-row gap-1 text-wrap"
+                    key={index}
+                  >
                     <IconButton
                       size="small"
                       sx={{
@@ -49,11 +52,10 @@ function Skills() {
                           backgroundColor: "grey",
                         },
                       }}
-                      round
                     >
                       <ArrowOutwardIcon fontSize="small" />
-                    </IconButton>
-                    {" "} {content}
+                    </IconButton>{" "}
+                    <span>{content}</span>
                   </div>
                 );
               })}

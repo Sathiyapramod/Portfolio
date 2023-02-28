@@ -39,7 +39,7 @@ export const Lists = [
     link1Fr: "https://github.com/Sathiyapramod/Blog-Website",
     linkBe: "",
     live: "https://blog-sathiyapramod.netlify.app/",
-    title: "India Post - Get Details of Your Nearest Post Office",
+    title: "Personal Blog Web Design",
     text: `Simple Blog Design for knowing the latest advancements in Daily Life of Web Developer 😉`,
   },
 ];

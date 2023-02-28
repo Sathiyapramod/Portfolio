@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import profile from "../../../src/assets/profilePic.jpeg";
+import Typewriter from "typewriter-effect";
 
 function Landing() {
   const isDesktop = useMediaquery("(min-width:768px)");
@@ -48,12 +49,23 @@ function Landing() {
             }}
           >
             <div className="bio">
-              I am a <span className="fw-bold fs-3">Full Stack Developer</span>,
-              Enthusiastic & Competitive Team player, Seeking Jobs on Web
+              I am a{" "}
+              <span className="fw-bold fs-3">
+                <Typewriter
+                  options={{
+                    strings: ["FullStack Developer", "Quick Learner"],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 90,
+                  }}
+                />
+              </span>
+              , Enthusiastic & Competitive Team player, Seeking Jobs on Web
               Development , blended with knowledge of Front-End and Back-End
-              elements, I am mostly prioritizing on understanding Client Requirements and
-              developing the Web Contents from scratch idea to Final
-              Stage. Currently, I am keenly focusing on Front-End Development.
+              elements, I am mostly prioritizing on understanding Client
+              Requirements and developing the Web Contents from scratch idea to
+              Final Stage. Currently, I am keenly focusing on Front-End
+              Development.
             </div>
           </motion.div>
           <span className="landing-button">
@@ -74,8 +86,10 @@ function Landing() {
                   backgroundColor: "#756BEE",
                   color: "white",
                   fontWeight: 500,
-                  paddingLeft: 3,
-                  paddingRight: 3,
+                  paddingLeft: 4,
+                  paddingRight: 4,
+                  paddingTop: 2,
+                  paddingBottom: 2,
                   "&:hover": {
                     backgroundColor: "black",
                   },

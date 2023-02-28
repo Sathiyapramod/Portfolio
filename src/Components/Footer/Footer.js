@@ -6,13 +6,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { githubLink, twitterLink, linkedinLink } from "../Navbar/general";
 import { Button } from "@mui/material";
 import BasicForm from "./BasicForm";
-import Details from './Details';
+import Details from "./Details";
 
 function Footer() {
   return (
     <div className="footer" id="contact">
       <span>
-        Networking is always Good 😊 !!<br />
+        Networking is always Good 😊 !!
+        <br />
         Share your feedback below
       </span>
       <div className="contact-section">
@@ -59,6 +60,13 @@ function Footer() {
             className="responsive-buttons"
           />
         </a>
+      </div>
+      <div className="final-button">
+        <Button variant="text">
+          <a href="#home" rel="noreferrer" style={{ textDecoration: "none" }}>
+            Go back to Top
+          </a>
+        </Button>
       </div>
       <div className="external-links copyrights">
         <div> Made by Sathiyapramod with 😊 | 2023 | All Rights Reserved </div>

@@ -44,7 +44,7 @@ function Navbar() {
                     href={`#${page}`}
                     style={navbarColor}
                     key={index}
-                    className="menu-links"
+                    className="menu-links-items"
                   >
                     {element}
                   </a>

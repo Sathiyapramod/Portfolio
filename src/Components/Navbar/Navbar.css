@@ -31,8 +31,13 @@
     color: auto;
 }
 
-.menu-links:hover {
-    text-decoration: wavy;
+.menu-links-items {
+    text-decoration: none;
+}
+
+.menu-links-items:hover {
+    color: grey;
+    transform: scale(1.05);
 }
 
 .corner-button {
