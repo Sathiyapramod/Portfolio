@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
+import About from "./Components/About/About";
 import Landing from "./Components/Landing/Landing";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
@@ -14,6 +15,7 @@ function App() {
       <div>
         <Navbar />
         <Landing />
+        <About />
         <Skills />
         <Projects />
         <Footer />

@@ -23,7 +23,7 @@ function Navbar() {
   }, []);
 
   const navbarColor = {
-    backgroundColor: scrollbg ? "navy" : "#FFF9E7",
+    backgroundColor: scrollbg ? "navy" :  "#FCFBFA",
     color: scrollbg ? "white" : "black",
   };
 
@@ -36,19 +36,21 @@ function Navbar() {
             className="menu-links d-flex flex-row justify-content-center gap-4 align-items-center pe-5"
             style={navbarColor}
           >
-            {["HOME", "SKILLS", "PROJECTS", "CONTACT"].map((element, index) => {
-              const page = element.toLowerCase();
-              return (
-                <a
-                  href={`#${page}`}
-                  style={navbarColor}
-                  key={index}
-                  className="menu-links"
-                >
-                  {element}
-                </a>
-              );
-            })}
+            {["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map(
+              (element, index) => {
+                const page = element.toLowerCase();
+                return (
+                  <a
+                    href={`#${page}`}
+                    style={navbarColor}
+                    key={index}
+                    className="menu-links"
+                  >
+                    {element}
+                  </a>
+                );
+              }
+            )}
           </div>
           <div className="pe-4">
             <Button
@@ -98,7 +100,7 @@ function Navbar() {
               </Button>
             </div>
             <div className="toggled-menu-lists">
-              {["HOME", "SKILLS", "PROJECT", "CONTACT"].map(
+              {["HOME", "ABOUT", "SKILLS", "PROJECT", "CONTACT"].map(
                 (element, index) => {
                   const page = element.toLowerCase();
                   return (

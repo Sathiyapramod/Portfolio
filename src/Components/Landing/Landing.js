@@ -17,6 +17,10 @@ function Landing() {
 
   return (
     <section id="home">
+      <div className="content-banner-landing">
+        About Me
+        <span className="tilted-about">Hello !</span>
+      </div>
       <div className="landing">
         <div className="landing-content">
           <div className="name">
@@ -43,12 +47,14 @@ function Landing() {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <span className="bio">
-              I am a Full Stack Developer, Enthusiastic & Competitive Team
-              player. <br />
-              Presently focussed on Seeking Jobs on Web Developer , blended with
-              knowledge of Front-end and NodeJS elements{" "}
-            </span>
+            <div className="bio">
+              I am a <span className="fw-bold fs-3">Full Stack Developer</span>,
+              Enthusiastic & Competitive Team player, Seeking Jobs on Web
+              Development , blended with knowledge of Front-End and Back-End
+              elements, I am mostly prioritizing on understanding Client Requirements and
+              developing the Web Contents from scratch idea to Final
+              Stage. Currently, I am keenly focusing on Front-End Development.
+            </div>
           </motion.div>
           <span className="landing-button">
             <motion.div

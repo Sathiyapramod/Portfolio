@@ -11,7 +11,17 @@
     text-align: left;
     padding: 5rem 0 0 8rem;
 }
-
+.tilted-projects {
+    display: inline-block;
+    position: relative;
+    rotate: -35deg;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--skills-ff);
+    color: #9A6936;
+    top:-50px;
+    left:-380px;
+}
 .colored {
     background-color: #FFF9E7;
 }

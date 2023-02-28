@@ -8,8 +8,11 @@ import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOu
 function Skills() {
   return (
     <div id="skills">
-      <div className="content-banner">My Skills</div>
-      <div className="content" >
+      <div className="content-banner">
+        My Skills
+        <span className="tilted-skills">Competencies</span>
+      </div>
+      <div className="content">
         <div className="content-1">
           <div className="skills-description">
             <div className="competency-title">Competencies:</div>
@@ -88,6 +91,9 @@ function Skills() {
                   alignItems: "center",
                   display: "flex",
                   justifyContent: "center",
+                  '&:hover':{
+                    backgroundColor:"#C8B4AC"
+                  }
                 }}
                 key={index}
                 elevation={6}

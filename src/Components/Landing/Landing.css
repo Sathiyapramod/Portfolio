@@ -3,7 +3,28 @@
 :root {
     --landing-ff: 'Lato', serif;
 }
-
+#home{
+    padding-top: 4rem;
+}
+.content-banner-landing {
+    font-size: 4rem;
+    font-family: var(--projects-ff);
+    font-weight: 600;
+    text-align: left;
+    background-color: #FCFBFA;
+    padding: 3rem 0 0 8rem;
+}
+.tilted-about {
+    display: inline-block;
+    position: relative;
+    rotate: -35deg;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--skills-ff);
+    color: #9A6936;
+    top:-50px;
+    left:-320px;
+}
 .landing {
     display: flex;
     flex-direction: row;
@@ -13,7 +34,7 @@
     font-family: var(--landing-ff);
     padding: 8rem;
     gap: 2rem;
-    background-color: #FFF9E7;
+    background-color: #FCFBFA;
 }
 
 .landing-content {
@@ -21,7 +42,6 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-   
 }
 
 .image-content {
@@ -44,6 +64,7 @@
 .bio {
     font-size: 1.2rem;
     font-weight: 500;
+    text-align: justify;
 }
 
 .menu-links {

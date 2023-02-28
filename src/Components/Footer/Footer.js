@@ -15,7 +15,7 @@ function Footer() {
         Networking is always Good 😊 !!<br />
         Share your feedback below
       </span>
-      <div className="d-flex flex-row justify-content-center align-items-center gap-3">
+      <div className="contact-section">
         <BasicForm />
         <Details />
       </div>
