@@ -1,6 +1,7 @@
 import React from "react";
 import "../Footer/Footer.css";
 import Button from "@mui/material/Button";
+import DownloadForOfflineOutlinedIcon from "@mui/icons-material/DownloadForOfflineOutlined";
 
 function BasicForm() {
   const anchorstyle = {
@@ -15,11 +16,12 @@ function BasicForm() {
           color="primary"
           sx={{
             backgroundColor: "#756BEE",
+            fontWeight: 500,
+            paddingLeft: { xs: 2, sm: 3 },
+            paddingRight: { xs: 2, sm: 3 },
             "&:hover": {
               backgroundColor: "black",
-              fontWeight: 300,
-              paddingLeft: { xs: 1, sm: 3 },
-              paddingRight: { xs: 1, sm: 3 },
+              
             },
           }}
         >
@@ -27,9 +29,11 @@ function BasicForm() {
             href="https://drive.google.com/file/d/187rWKJAEbMEIKVyKtjb87PwwRl1QDyxc/view?usp=share_link"
             target="_blank"
             style={anchorstyle}
+            rel="noreferrer"
             download
           >
-            GET Resume
+            <DownloadForOfflineOutlinedIcon />
+            DOWNLOAD RESUME
           </a>
         </Button>
       </div>
