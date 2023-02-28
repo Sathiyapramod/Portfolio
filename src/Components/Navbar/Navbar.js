@@ -36,7 +36,7 @@ function Navbar() {
             className="menu-links d-flex flex-row justify-content-center gap-4 align-items-center pe-5"
             style={navbarColor}
           >
-            {["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map(
+            {["HOME", "SKILLS", "PROJECTS", "CONTACT"].map(
               (element, index) => {
                 const page = element.toLowerCase();
                 return (
@@ -100,7 +100,7 @@ function Navbar() {
               </Button>
             </div>
             <div className="toggled-menu-lists">
-              {["HOME", "ABOUT", "SKILLS", "PROJECT", "CONTACT"].map(
+              {["HOME", "SKILLS", "PROJECT", "CONTACT"].map(
                 (element, index) => {
                   const page = element.toLowerCase();
                   return (

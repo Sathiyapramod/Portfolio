@@ -3,7 +3,8 @@ import "../Skills/Skills.css";
 import Card from "@mui/material/Card";
 import { CardContent } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
-import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
+import IconButton from "@mui/material/IconButton";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 function Skills() {
   return (
@@ -37,9 +38,22 @@ function Skills() {
                 "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu",
               ].map((content, index) => {
                 return (
-                  <div className="skill-content" key={index}>
-                    <ArrowCircleRightOutlinedIcon />
-                    {"  "} {content}
+                  <div className="skill-content d-flex flex-row gap-3" key={index}>
+                    <IconButton
+                      size="small"
+                      sx={{
+                        color: "white",
+                        size: "small",
+                        backgroundColor: "#5C64CF",
+                        "&:hover": {
+                          backgroundColor: "grey",
+                        },
+                      }}
+                      round
+                    >
+                      <ArrowOutwardIcon fontSize="small" />
+                    </IconButton>
+                    {" "} {content}
                   </div>
                 );
               })}
@@ -91,9 +105,9 @@ function Skills() {
                   alignItems: "center",
                   display: "flex",
                   justifyContent: "center",
-                  '&:hover':{
-                    backgroundColor:"#C8B4AC"
-                  }
+                  "&:hover": {
+                    backgroundColor: "#C8B4AC",
+                  },
                 }}
                 key={index}
                 elevation={6}
