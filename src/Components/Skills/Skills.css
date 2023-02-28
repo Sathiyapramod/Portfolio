@@ -12,8 +12,8 @@
     font-weight: 500;
     font-family: var(--skills-ff);
     color: #9A6936;
-    top:-50px;
-    left:-320px;
+    top: -50px;
+    left: -320px;
 }
 
 .content {
@@ -30,6 +30,15 @@
 
 #skills {
     background-color: #F7AF24;
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: start;
 }
 
 .content-1 {
@@ -133,7 +142,7 @@
     justify-content: center;
     align-items: flex-start;
     word-wrap: break-word;
-    gap: 0.5rem;
+    gap: 1rem;
     font-family: var(--skills-ff);
     font-size: 1.2rem;
     font-weight: 500;
@@ -143,4 +152,17 @@
 .profile-skills {
     width: 40px;
     height: 40px;
+}
+
+@media screen and (min-width:200px) and (max-width:998px) {
+    .certifications {
+
+        gap: 3rem;
+    }
+
+    .skill-content {
+        gap: 2rem;
+        padding: 0 0 0 2rem;
+    }
+
 }

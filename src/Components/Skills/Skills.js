@@ -38,10 +38,7 @@ function Skills() {
                 "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu",
               ].map((content, index) => {
                 return (
-                  <div
-                    className="skill-content d-flex flex-row gap-1 text-wrap"
-                    key={index}
-                  >
+                  <span className="skill-content " key={index}>
                     <IconButton
                       size="small"
                       sx={{
@@ -56,7 +53,7 @@ function Skills() {
                       <ArrowOutwardIcon fontSize="small" />
                     </IconButton>{" "}
                     <span>{content}</span>
-                  </div>
+                  </span>
                 );
               })}
             </div>
