@@ -38,7 +38,7 @@ function Skills() {
                 "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu",
               ].map((content, index) => {
                 return (
-                  <span className="skill-content " key={index}>
+                  <span className="skill-content" key={index}>
                     <span>{content}</span>
                     {index >= 1 && index <= 2 ? (
                       <IconButton
