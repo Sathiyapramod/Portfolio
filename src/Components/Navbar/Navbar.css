@@ -22,6 +22,7 @@
     width: 100vw;
     position: fixed;
     z-index: 1;
+    transition: background-color 0.5s ease;
 }
 
 .menu-links {
@@ -29,10 +30,13 @@
     font-family: var(--navbar-ff);
     font-size: 1.15rem;
     color: auto;
+    transition: background-color 0.5s ease;
+
 }
 
 .menu-links-items {
     text-decoration: none;
+    transition: background-color 0.5s ease;
 }
 
 .menu-links-items:hover {
