@@ -41,19 +41,6 @@ function Footer() {
           className="menu-links"
         >
           <Button
-            startIcon={<TwitterIcon />}
-            size="large"
-            color="inherit"
-            className="responsive-buttons"
-          />
-        </a>
-        <a
-          href={twitterLink}
-          target="_blank"
-          rel="noreferrer"
-          className="menu-links"
-        >
-          <Button
             startIcon={<LinkedInIcon />}
             size="large"
             color="inherit"
