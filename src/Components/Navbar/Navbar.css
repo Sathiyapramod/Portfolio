@@ -21,6 +21,7 @@
     height: 6rem;
     width: 100vw;
     position: fixed;
+    z-index: 1;
 }
 
 .menu-links {

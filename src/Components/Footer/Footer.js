@@ -12,8 +12,8 @@ function Footer() {
   return (
     <div className="footer" id="contact">
       <span>
-        Networking is always Good <br />
-        Share you feedback below
+        Networking is always Good 😊 !!<br />
+        Share your feedback below
       </span>
       <div className="d-flex flex-row justify-content-center align-items-center gap-3">
         <BasicForm />
