@@ -64,6 +64,7 @@
     font-weight: 600;
     line-height: 5rem;
     text-decoration: underline;
+    transition: color 0.5s ease;
 }
 
 .skill-insights:hover {
@@ -83,6 +84,7 @@
     font-family: var(--skills-ff);
     font-weight: 500;
     line-height: 2rem;
+    transition: color 0.5s ease-in-out;
 }
 
 .competencies:hover {

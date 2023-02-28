@@ -39,20 +39,24 @@ function Skills() {
               ].map((content, index) => {
                 return (
                   <span className="skill-content " key={index}>
-                    <IconButton
-                      size="small"
-                      sx={{
-                        color: "white",
-                        size: "small",
-                        backgroundColor: "#5C64CF",
-                        "&:hover": {
-                          backgroundColor: "grey",
-                        },
-                      }}
-                    >
-                      <ArrowOutwardIcon fontSize="small" />
-                    </IconButton>{" "}
                     <span>{content}</span>
+                    {index >= 1 && index <= 2 ? (
+                      <IconButton
+                        size="small"
+                        sx={{
+                          color: "white",
+                          size: "small",
+                          backgroundColor: "#5C64CF",
+                          "&:hover": {
+                            backgroundColor: "grey",
+                          },
+                        }}
+                      >
+                        <ArrowOutwardIcon fontSize="small" />
+                      </IconButton>
+                    ) : (
+                      ""
+                    )}
                   </span>
                 );
               })}
@@ -104,6 +108,7 @@ function Skills() {
                   alignItems: "center",
                   display: "flex",
                   justifyContent: "center",
+                  transition: "ease-out",
                   "&:hover": {
                     backgroundColor: "#C8B4AC",
                   },

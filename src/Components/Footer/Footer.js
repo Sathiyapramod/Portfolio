@@ -1,9 +1,8 @@
 import React from "react";
 import "../Footer/Footer.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { githubLink, twitterLink, linkedinLink } from "../Navbar/general";
+import { githubLink, linkedinLink } from "../Navbar/general";
 import { Button } from "@mui/material";
 import BasicForm from "./BasicForm";
 import Details from "./Details";
