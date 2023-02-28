@@ -23,6 +23,26 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    font-family: var(--footer-ff);
+    font-size: 1rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-family: var(--footer-ff);
+    font-size: 1.2rem;
+}
+
+.email {
+    text-decoration: underline;
+    font-family: var(--footer-ff);
+    font-size: 1rem;
+}
+
+.email:hover {
+    color: blue;
 }
 
 .copyrights {
@@ -46,6 +66,9 @@
 
 .resume-link {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .contact-section {
@@ -63,7 +86,7 @@
     text-align: right;
     text-decoration: none;
     top: 70px;
-    
+
 }
 
 @media screen and (max-width:600px) and (min-width:150px) {
@@ -82,18 +105,19 @@
     .external-links {
         padding: 1.5rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
     }
+
     .final-button {
 
         position: relative;
         text-align: right;
         text-decoration: none;
         top: 0px;
-        
+
     }
 
 }
