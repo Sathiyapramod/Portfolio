@@ -1,6 +1,5 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-import About from "./Components/About/About";
 import Landing from "./Components/Landing/Landing";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
@@ -8,7 +7,11 @@ import Footer from "./Components/Footer/Footer";
 import SmoothScroll from "smooth-scroll";
 import AnimatedCursor from "react-animated-cursor";
 
-export const scroll = new SmoothScroll('a[href*="#"]');
+export const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 300,
+  speedAsDuration: true,
+  easing: "easeInQuad",
+});
 
 function App() {
   return (
@@ -24,7 +27,6 @@ function App() {
       <div>
         <Navbar />
         <Landing />
-        <About />
         <Skills />
         <Projects />
         <Footer />
