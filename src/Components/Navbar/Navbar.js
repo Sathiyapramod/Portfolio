@@ -100,7 +100,7 @@ function Navbar() {
               </Button>
             </div>
             <div className="toggled-menu-lists">
-              {["HOME", "SKILLS", "PROJECT", "CONTACT"].map(
+              {["HOME", "SKILLS", "PROJECTS", "CONTACT"].map(
                 (element, index) => {
                   const page = element.toLowerCase();
                   return (
