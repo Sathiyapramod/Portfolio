@@ -16,7 +16,7 @@ export const Lists = [
     linkBe: "",
     live: "https://indiapost-sathiyapramod.netlify.app/",
     title: "India Post - Get Details of Your Nearest Post Office",
-    text: `Here , the User can avail Post Offices Details around their location by simply searching the Place names`,
+    text: `Made with HTML and Bootstrap, User can avail Post Offices Details around their location by simply searching the Place names`,
   },
   {
     id: 2,
@@ -26,9 +26,8 @@ export const Lists = [
     link1Fr: "https://github.com/Sathiyapramod/To_Do_App",
     linkBe: "",
     live: "https://todoapp-sathiyapramod.netlify.app/",
-    title:
-      "Simple Todo App - built with all CRUD Operations , Made with React JS ",
-    text: `Here , the User can avail Post Offices Details around their location by simply searching the Place names`,
+    title: "Simple Todo App - built with all CRUD Operations",
+    text: `Made with ReactJS, Implements the basic requirements of a Daily To Do Manager App`,
   },
   {
     id: 3,
