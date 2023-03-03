@@ -17,6 +17,21 @@
     padding: 3rem 0 0 8rem;
 }
 
+.content-banner-landing::after {
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 0.5rem;
+    border-bottom: 2px solid  #9A6936;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: transform 0.9s ease-in;
+}
+
+.content-banner-landing:hover::after {
+    transform: scale(1)
+}
+
 .tilted-about {
     display: inline-block;
     position: relative;
