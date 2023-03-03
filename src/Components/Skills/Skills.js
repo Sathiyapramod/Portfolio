@@ -34,52 +34,55 @@ function Skills() {
             </div>
           </div>
           <div className="certifications">
-            <div className="certifications">
-              {[
-                {
-                  content:
-                    "Currently pursuing Full Stack Development - BootCamp course at GUVI Geeks",
-                },
-                {
-                  content:
-                    "Enrolled and Completed Javascript Learner Course from GUVI",
-                  link: "https://www.guvi.in/verify-certificate?id=2z64uM1641872TO823",
-                },
-                {
-                  content:
-                    "Participated in 30days Codekata Challenge organized by GUVI Geeks",
-                  link: "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link",
-                },
-                {
-                  content:
-                    "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu",
-                },
-              ].map((content, index) => {
-                return (
-                  <span className="skill-content" key={index}>
-                    <span>{content.content}</span>
-                    {index >= 1 && index <= 2 ? (
-                      <a href={content.link} style={linkStyling} target="_blank" rel="noreferrer">
-                        <IconButton
-                          size="small"
-                          sx={{
-                            color: "white",
-                            backgroundColor: "#5C64CF",
-                            "&:hover": {
-                              backgroundColor: "grey",
-                            },
-                          }}
-                        >
-                          <ArrowOutwardIcon fontSize="small" />
-                        </IconButton>
-                      </a>
-                    ) : (
-                      ""
-                    )}
-                  </span>
-                );
-              })}
-            </div>
+            {[
+              {
+                content:
+                  "Currently pursuing Full Stack Development - BootCamp course at GUVI Geeks",
+              },
+              {
+                content:
+                  "Enrolled and Completed Javascript Learner Course from GUVI",
+                link: "https://www.guvi.in/verify-certificate?id=2z64uM1641872TO823",
+              },
+              {
+                content:
+                  "Participated in 30days Codekata Challenge organized by GUVI Geeks",
+                link: "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link",
+              },
+              {
+                content:
+                  "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu",
+              },
+            ].map((content, index) => {
+              return (
+                <span className="skill-content" key={index}>
+                  <span>{content.content}</span>
+                  {index >= 1 && index <= 2 ? (
+                    <a
+                      href={content.link}
+                      style={linkStyling}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <IconButton
+                        size="small"
+                        sx={{
+                          color: "white",
+                          backgroundColor: "#5C64CF",
+                          "&:hover": {
+                            backgroundColor: "grey",
+                          },
+                        }}
+                      >
+                        <ArrowOutwardIcon fontSize="small" />
+                      </IconButton>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                </span>
+              );
+            })}
           </div>
         </div>
         <div className="skills-icons">
