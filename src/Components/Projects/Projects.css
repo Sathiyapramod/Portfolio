@@ -9,7 +9,7 @@
     font-family: var(--projects-ff);
     font-weight: 600;
     text-align: left;
-    padding: 5rem 0 0 8rem;
+    padding: 3rem 0 0 8rem;
 }
 .tilted-projects {
     display: inline-block;
@@ -19,8 +19,9 @@
     font-weight: 500;
     font-family: var(--skills-ff);
     color: #9A6936;
-    top:-50px;
-    left:-380px;
+    inset: -50px 0 0 -380px;
+    /* top:-50px; */
+    /* left:-380px; */
 }
 .colored {
     background-color: #FFF9E7;
@@ -41,13 +42,18 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-
 }
-
+.project-card{
+    transition: background-color 0.15s ease-in;
+    padding: 5px;
+}
+.project-card:hover{
+    background-color: lightgrey;
+}
 .project-description {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
@@ -91,10 +97,11 @@
     height: 300px;
 }
 
-@media screen and (min-Width:100px) and (max-Width:768px) {
+@media screen and (min-Width:200px) and (max-Width:768px) {
     .project-image {
-        width: 300px;
+        width: 280px;
         height: 200px;
+        object-fit:cover;
     }
 
     .titleblock {
@@ -109,10 +116,11 @@
         padding: 0.3rem 0 0.5rem 0;
     }
     .content-banner {
-        font-size: 3.5rem;
-        font-family: var(--projects-ff);
-        font-weight: 600;
-        text-align: left;
-        padding: 5rem 0 0 5rem;
+        margin-inline: auto;
+        font-size: 3rem;
+        padding: 3rem 0 0 3rem;
+    }
+    .tilted-projects {
+        inset: -115px 0 0 -30px;
     }
 }

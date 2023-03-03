@@ -22,11 +22,9 @@ function Projects() {
             return (
               <Paper
                 key={index}
-                sx={{ width: { xs: 300, sm: 425 },
-                '&:hover':{
-                  backgroundColor:"lightgrey"
-                } }}
+                sx={{ width: { xs: 290, sm: 425 } }}
                 elevation={6}
+                className="project-card"
               >
                 <div>
                   <img
