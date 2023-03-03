@@ -22,7 +22,7 @@ function Projects() {
             return (
               <Paper
                 key={index}
-                sx={{ width: { xs: 290, sm: 425 } }}
+                sx={{ width: { xs: 290, sm: 425 } , height:550}}
                 elevation={6}
                 className="project-card"
               >

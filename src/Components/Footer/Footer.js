@@ -24,7 +24,7 @@ function Footer() {
           href={githubLink}
           target="_blank"
           rel="noreferrer"
-          className="menu-links"
+          className=""
         >
           <Button
             startIcon={<GitHubIcon />}
@@ -37,7 +37,7 @@ function Footer() {
           href={linkedinLink}
           target="_blank"
           rel="noreferrer"
-          className="menu-links"
+          className=""
         >
           <Button
             startIcon={<LinkedInIcon />}

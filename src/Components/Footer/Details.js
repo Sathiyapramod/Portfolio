@@ -2,6 +2,9 @@ import React from "react";
 import "../Footer/Footer.css";
 import Button from "@mui/material/Button";
 import DownloadForOfflineOutlinedIcon from "@mui/icons-material/DownloadForOfflineOutlined";
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+
 
 function BasicForm() {
   const anchorstyle = {
@@ -12,13 +15,13 @@ function BasicForm() {
     <div>
       <div className="resume-link">
         <div className="contact-details">
-          <label>E-mail:</label>
+          <label><EmailIcon /></label>
           <span className="email">
             <a href="mailto:sathiyapramod22@gmail.com" rel="noreferrer" target="_blank">sathiyapramod22@gmail.com</a>
           </span>
         </div>
         <div className="contact-details">
-          <label>Mobile No.</label>
+          <label><PhoneInTalkIcon /></label>
           <span>
             <a href="tel:+919597097508">+91 9597097508</a>
           </span>

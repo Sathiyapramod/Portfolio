@@ -23,7 +23,7 @@ function Navbar() {
   }, []);
 
   const navbarColor = {
-    backgroundColor: scrollbg ? "navy" :  "#FCFBFA",
+    backgroundColor: scrollbg ? "navy" : "#FCFBFA",
     color: scrollbg ? "white" : "black",
   };
 
@@ -31,28 +31,26 @@ function Navbar() {
     <div>
       {isDesktop ? (
         <div className="navbar" style={navbarColor}>
-          <div className="logo ps-3">Sathiyapramod</div>
+          <div className="logo">Sathiyapramod</div>
           <div
-            className="menu-links d-flex flex-row justify-content-center gap-4 align-items-center pe-5"
+            className="menu-links"
             style={navbarColor}
           >
-            {["HOME", "SKILLS", "PROJECTS", "CONTACT"].map(
-              (element, index) => {
-                const page = element.toLowerCase();
-                return (
-                  <a
-                    href={`#${page}`}
-                    style={navbarColor}
-                    key={index}
-                    className="menu-links-items"
-                  >
-                    {element}
-                  </a>
-                );
-              }
-            )}
+            {["HOME", "SKILLS", "PROJECTS", "CONTACT"].map((element, index) => {
+              const page = element.toLowerCase();
+              return (
+                <a
+                  href={`#${page}`}
+                  style={navbarColor}
+                  key={index}
+                  className="menu-links-items"
+                >
+                  {element}
+                </a>
+              );
+            })}
           </div>
-          <div className="pe-4">
+          <div className="hire-button">
             <Button
               variant="contained"
               sx={{
@@ -71,7 +69,7 @@ function Navbar() {
         </div>
       ) : (
         <div className="navbar" style={navbarColor}>
-          <div className="logo text-secondary-emphasis ps-3">S</div>
+          <div className="logo">Sathiyapramod</div>
           <div className="menu-toggled" style={navbarColor}>
             <Button
               variant="text"

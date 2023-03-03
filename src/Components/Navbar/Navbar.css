@@ -26,6 +26,12 @@
 }
 
 .menu-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
     text-decoration: none;
     font-family: var(--navbar-ff);
     font-size: 1.15rem;
@@ -48,7 +54,11 @@
     position: fixed;
     top: 0px;
     right: 0px;
-    padding-top: 1rem;
+    padding: 1rem 0 0 0;
+}
+
+.hire-button {
+    padding: 0 2rem 0 0;
 }
 
 .toggled-menu-lists {
@@ -67,4 +77,5 @@
 .logo {
     font-size: 1.5rem;
     font-weight: 600;
+    padding: 0 0 0 1rem;
 }
