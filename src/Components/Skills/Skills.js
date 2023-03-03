@@ -25,7 +25,7 @@ function Skills() {
               {["Team Player", "Avid Learner", "Adaptability"].map(
                 (skill, index) => {
                   return (
-                    <div key={index}>
+                    <div key={index} className="competencies-item">
                       <StarIcon /> {skill}
                     </div>
                   );
@@ -56,7 +56,7 @@ function Skills() {
             ].map((content, index) => {
               return (
                 <span className="skill-content" key={index}>
-                  <span>{content.content}</span>
+                  <span> ✅ {content.content}</span>
                   {index >= 1 && index <= 2 ? (
                     <a
                       href={content.link}

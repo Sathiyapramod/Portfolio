@@ -12,8 +12,7 @@
     font-weight: 500;
     font-family: var(--skills-ff);
     color: #9A6936;
-    top: -50px;
-    left: -320px;
+    inset: -50px 0 0 -320px;
 }
 
 .content {
@@ -37,8 +36,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    text-align: start;
+    gap: 1rem;
 }
 
 .content-1 {
@@ -59,8 +57,23 @@
     padding: 5rem 0 0 15rem;
 }
 
+.content-banner::after {
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 0.5rem;
+    border-bottom: 5px solid #9A6936;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: transform 0.9s ease-in;
+}
+
+.content-banner:hover::after {
+    transform: scale(1);
+}
+
 .skill-insights {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 5rem;
     text-decoration: underline;
@@ -70,11 +83,14 @@
 .skill-insights:hover {
     color: grey;
 }
+
 .competencies {
-    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
     font-family: var(--skills-ff);
     font-weight: 500;
-    line-height: 2rem;
     transition: color 0.5s ease-in-out;
 }
 
@@ -83,9 +99,15 @@
     font-family: var(--skills-ff);
     font-weight: 600;
     line-height: 2rem;
+    padding: 0 0 2rem 0;
 }
-.competencies:hover {
-    color: grey;
+
+
+.competencies-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .skills-description {
@@ -97,6 +119,7 @@
     padding: 0 3rem 0 3rem;
 
 }
+
 .skills-description::before {
     content: '';
     border-top: 3px solid black;
@@ -108,15 +131,10 @@
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
 }
+
 .skills-description:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-
-.description-title {
-    font-size: 1.6rem;
-    font-weight: 500;
 }
 
 .skill-item {
@@ -128,16 +146,20 @@
     font-weight: 500;
 }
 
+.description-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
 .skills-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 1.2rem;
 }
-
-
 
 .value-items {
     font-weight: 500;
@@ -151,7 +173,7 @@
     word-wrap: break-word;
     gap: 1rem;
     font-family: var(--skills-ff);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -168,8 +190,10 @@
     }
 
     .skill-content {
-        gap: 2rem;
-        padding: 0 0 0 2rem;
+        padding: 2rem;
+        text-align: start;
+        font-size: 1.2rem;
+
     }
 
 }
