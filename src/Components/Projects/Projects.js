@@ -9,10 +9,7 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 function Projects() {
   return (
     <div id="projects">
-      <div className="content-banner colored">
-        My Projects
-        <span className="tilted-projects">Demo</span>
-      </div>
+      <div className="content-banner-projects colored">My Projects</div>
       <div className="project-content">
         <div className="project-title">
           <span className="sub-header">What I contributed</span>
@@ -22,7 +19,7 @@ function Projects() {
             return (
               <Paper
                 key={index}
-                sx={{ width: { xs: 290, sm: 425 } , height:550}}
+                sx={{ width: { xs: 290, sm: 425 }, height: 550 }}
                 elevation={6}
                 className="project-card"
               >

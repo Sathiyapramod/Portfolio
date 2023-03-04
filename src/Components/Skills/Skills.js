@@ -13,9 +13,8 @@ function Skills() {
   };
   return (
     <div id="skills">
-      <div className="content-banner">
+      <div className="content-banner-skills">
         My Skills
-        <span className="tilted-skills">Competencies</span>
       </div>
       <div className="content">
         <div className="content-1">

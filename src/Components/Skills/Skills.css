@@ -4,17 +4,6 @@
     --skills-ff: 'Lato', sans-serif;
 }
 
-.tilted-skills {
-    display: inline-block;
-    position: relative;
-    rotate: -35deg;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: var(--skills-ff);
-    color: #9A6936;
-    inset: -50px 0 0 -320px;
-}
-
 .content {
     padding: 3rem 0rem 3rem 0rem;
     display: flex;
@@ -28,6 +17,7 @@
 }
 
 #skills {
+    padding: 4rem 0 4rem 0;
     background-color: #F7AF24;
 }
 
@@ -49,15 +39,15 @@
     padding: 3rem 0 3rem 0;
 }
 
-.content-banner {
+.content-banner-skills {
     font-size: 4rem;
     font-family: var(--skills-ff);
     font-weight: 600;
     text-align: left;
-    padding: 5rem 0 0 15rem;
+    padding: 0 0 0 8rem;
 }
 
-.content-banner::after {
+.content-banner-skills::after {
     content: '';
     display: block;
     width: 20rem;
@@ -68,7 +58,7 @@
     transition: transform 0.9s ease-in;
 }
 
-.content-banner:hover::after {
+.content-banner-skills:hover::after {
     transform: scale(1);
 }
 
@@ -123,7 +113,7 @@
 .skills-description::before {
     content: '';
     border-top: 3px solid black;
-    width: 150px;
+    width: 180px;
     height: 15px;
     display: block;
     margin: 0 auto;
@@ -185,15 +175,18 @@
 
 @media screen and (min-width:200px) and (max-width:998px) {
     .certifications {
-
         gap: 3rem;
+    }
+
+    .content-banner {
+        margin-inline: auto;
+        font-size: 3rem;
+        padding: 3rem 0 0 3rem;
     }
 
     .skill-content {
         padding: 2rem;
         text-align: start;
         font-size: 1.2rem;
-
     }
-
 }
