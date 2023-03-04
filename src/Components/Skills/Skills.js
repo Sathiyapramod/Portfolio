@@ -6,53 +6,32 @@ import StarIcon from "@mui/icons-material/Star";
 import IconButton from "@mui/material/IconButton";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
-function Skills() {
+function Skills(props) {
   const linkStyling = {
     color: "white",
     textDecoration: "none",
   };
   return (
     <div id="skills">
-      <div className="content-banner-skills">
-        My Skills
-      </div>
+      <div className="content-banner-skills">{props.data.contentbanner}</div>
       <div className="content">
         <div className="content-1">
           <div className="skills-description">
-            <div className="competency-title">Competencies:</div>
+            <div className="competency-title">
+              {props.data.skills.competencies.title}
+            </div>
             <div className="competencies">
-              {["Team Player", "Avid Learner", "Adaptability"].map(
-                (skill, index) => {
-                  return (
-                    <div key={index} className="competencies-item">
-                      <StarIcon /> {skill}
-                    </div>
-                  );
-                }
-              )}
+              {props.data.skills.competencies.list.map((skill, index) => {
+                return (
+                  <div key={index} className="competencies-item">
+                    <StarIcon /> {skill}
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className="certifications">
-            {[
-              {
-                content:
-                  "Currently pursuing Full Stack Development - BootCamp course at GUVI Geeks",
-              },
-              {
-                content:
-                  "Enrolled and Completed Javascript Learner Course from GUVI",
-                link: "https://www.guvi.in/verify-certificate?id=2z64uM1641872TO823",
-              },
-              {
-                content:
-                  "Participated in 30days Codekata Challenge organized by GUVI Geeks",
-                link: "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link",
-              },
-              {
-                content:
-                  "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu",
-              },
-            ].map((content, index) => {
+            {props.data.skills.highlights.map((content, index) => {
               return (
                 <span className="skill-content" key={index}>
                   <span> ✅ {content.content}</span>
@@ -85,41 +64,7 @@ function Skills() {
           </div>
         </div>
         <div className="skills-icons">
-          {[
-            {
-              name: "HTML",
-              image: "https://img.icons8.com/color/256/html-5.png",
-            },
-            {
-              name: "CSS",
-              image: "https://img.icons8.com/color/256/css3.png",
-            },
-            {
-              name: "Javascript",
-              image: "https://img.icons8.com/fluency/256/javascript.png",
-            },
-            {
-              name: "BootStrap",
-              image: "https://img.icons8.com/color/256/bootstrap.png",
-            },
-            {
-              name: "MongoDB",
-              image:
-                "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png",
-            },
-            {
-              name: "React JS",
-              image: "https://img.icons8.com/color/256/react-native.png",
-            },
-            {
-              name: "Material UI",
-              image: "https://img.icons8.com/color/256/material-ui.png",
-            },
-            {
-              name: "NodeJS",
-              image: "https://img.icons8.com/color/256/nodejs.png",
-            },
-          ].map((element, index) => {
+          {props.data.keyskills.map((element, index) => {
             return (
               <Card
                 sx={{

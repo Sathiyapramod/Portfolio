@@ -2,26 +2,25 @@ import React from "react";
 import "../Footer/Footer.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { githubLink, linkedinLink } from "../Navbar/general";
 import { Button } from "@mui/material";
 import BasicForm from "./BasicForm";
 import Details from "./Details";
 
-function Footer() {
+function Footer(props) {
   return (
     <div className="footer" id="contact">
       <span>
-        Networking is always Good 😊 !!
+        {props.data.footerheading}
         <br />
-        Share your feedback below
+        {props.data.footersubheading}
       </span>
       <div className="contact-section">
-        <BasicForm />
-        <Details />
+        <BasicForm basicdata={props.data.basicdata} />
+        <Details Mydetails={props.data.Mydetails}/>
       </div>
       <div className="external-links">
         <a
-          href={githubLink}
+          href={props.data.githublink}
           target="_blank"
           rel="noreferrer"
           className=""
@@ -34,7 +33,7 @@ function Footer() {
           />
         </a>
         <a
-          href={linkedinLink}
+          href={props.data.linkedinProfile}
           target="_blank"
           rel="noreferrer"
           className=""
@@ -50,12 +49,12 @@ function Footer() {
       <div className="final-button">
         <Button variant="text">
           <a href="#home" rel="noreferrer" style={{ textDecoration: "none" }}>
-            Go back to Top
+            {props.data.scrollAction}
           </a>
         </Button>
       </div>
       <div className="external-links copyrights">
-        <div> Made by Sathiyapramod with 😊 | 2023 | All Rights Reserved </div>
+        <div>{props.data.Copyrights} </div>
       </div>
     </div>
   );

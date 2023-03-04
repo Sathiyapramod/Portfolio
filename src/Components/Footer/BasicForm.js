@@ -1,10 +1,9 @@
 import React from "react";
 import "../Footer/Footer.css";
 import { Paper } from "@mui/material";
-import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-function BasicForm() {
+function BasicForm(props) {
   return (
     <div>
       <Paper
@@ -18,16 +17,27 @@ function BasicForm() {
       >
         <form className="d-flex flex-column gap-3">
           <div className="d-flex flex-row gap-3 align-items-center">
-            <label className="form-label col-3">Name</label>
+            <label className="form-label col-3">
+              {props.basicdata.formdata.name}
+            </label>
             <input type="text" className="form-control me-2"></input>
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
-            <label className="form-label col-3">Email-Id</label>
+            <label className="form-label col-3">
+              {props.basicdata.formdata.email}
+            </label>
             <input type="text" className="form-control me-2"></input>
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
-            <label className="form-label col-3">Message</label>
-            <textarea type="text" className="form-control me-2" rows="4" cols="4"/>
+            <label className="form-label col-3">
+              {props.basicdata.formdata.message}
+            </label>
+            <textarea
+              type="text"
+              className="form-control me-2"
+              rows="4"
+              cols="4"
+            />
           </div>
           <div>
             <Button
@@ -43,7 +53,7 @@ function BasicForm() {
                 },
               }}
             >
-              Send Feedback
+              {props.basicdata.formAction}
             </Button>
           </div>
         </form>

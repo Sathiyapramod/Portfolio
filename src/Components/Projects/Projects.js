@@ -1,21 +1,22 @@
 import React from "react";
 import "./Projects.css";
-import { Lists } from "./lists";
 import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
-function Projects() {
+function Projects(props) {
   return (
     <div id="projects">
-      <div className="content-banner-projects colored">My Projects</div>
+      <div className="content-banner-projects colored">
+        {props.data.contentbanner}
+      </div>
       <div className="project-content">
         <div className="project-title">
-          <span className="sub-header">What I contributed</span>
+          <span className="sub-header">{props.data.subheader}</span>
         </div>
         <div className="project-description">
-          {Lists.map((project, index) => {
+          {props.data.projectlists.map((project, index) => {
             return (
               <Paper
                 key={index}
@@ -47,7 +48,7 @@ function Projects() {
                     }}
                   >
                     <GitHubIcon />
-                    See Code
+                    {props.data.visitorAction1}
                   </Button>
                   <Button
                     variant="contained"
@@ -62,7 +63,7 @@ function Projects() {
                       },
                     }}
                   >
-                    Go Live
+                    {props.data.visitorAction2}
                     <ArrowOutwardIcon />
                   </Button>
                 </div>

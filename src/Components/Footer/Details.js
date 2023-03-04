@@ -2,11 +2,10 @@ import React from "react";
 import "../Footer/Footer.css";
 import Button from "@mui/material/Button";
 import DownloadForOfflineOutlinedIcon from "@mui/icons-material/DownloadForOfflineOutlined";
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
-
-function BasicForm() {
+function BasicDetails(props) {
   const anchorstyle = {
     textDecoration: "none",
     color: "white",
@@ -15,15 +14,25 @@ function BasicForm() {
     <div>
       <div className="resume-link">
         <div className="contact-details">
-          <label><EmailIcon /></label>
+          <label>
+            <EmailIcon />
+          </label>
           <span className="email">
-            <a href="mailto:sathiyapramod22@gmail.com" rel="noreferrer" target="_blank">sathiyapramod22@gmail.com</a>
+            <a
+              href="mailto:sathiyapramod22@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              {props.Mydetails.myemailId}
+            </a>
           </span>
         </div>
         <div className="contact-details">
-          <label><PhoneInTalkIcon /></label>
+          <label>
+            <PhoneInTalkIcon />
+          </label>
           <span>
-            <a href="tel:+919597097508">+91 9597097508</a>
+            <a href="tel:+919597097508">{props.Mydetails.myphoneNo}</a>
           </span>
         </div>
         <div className="resume-button">
@@ -41,13 +50,14 @@ function BasicForm() {
             }}
           >
             <a
-              href="https://drive.google.com/file/d/14dRhP9HOafaaWZaSfs1dhARfwA20AKW5/view?usp=share_link"
+              href={props.Mydetails.myResumeLink}
               target="_blank"
               style={anchorstyle}
               rel="noreferrer"
               download
             >
-              <DownloadForOfflineOutlinedIcon /> DOWNLOAD RESUME
+              <DownloadForOfflineOutlinedIcon />{" "}
+              {props.Mydetails.visitorAction1}
             </a>
           </Button>
         </div>
@@ -56,4 +66,4 @@ function BasicForm() {
   );
 }
 
-export default BasicForm;
+export default BasicDetails;

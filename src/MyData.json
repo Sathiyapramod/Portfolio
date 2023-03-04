@@ -1,0 +1,143 @@
+{
+  "navbar": {
+    "logo": "Sathiyapramod",
+    "links": ["HOME", "SKILLS", "PROJECTS", "CONTACT"],
+    "hireButton": "Hire Me !"
+  },
+  "home": {
+    "tilted": "Hello !",
+    "contentbanner": "About Me ",
+    "span1": "I am ",
+    "typertext": ["Full Stack Developer", "Quick Learner"],
+    "name": "👋🏻 Sathiyapramod K R",
+    "bio": "Being an Enthusiastic & Competitive Team player, Seeking Jobs on Web Development , blended with knowledge of Front-End and Back-End elements, I am mostly prioritizing on understanding Client Requirements and developing the Web Contents from scratch idea to Final Stage. Currently, I am keenly focusing on Front-End Development.",
+    "buttonContent": "LET'S DISCUSS",
+    "links": {
+      "github": "https://github.com/Sathiyapramod",
+      "linkedin": "https://www.linkedin.com/in/sathiyapramod/"
+    },
+    "scrollNotifier": "Scroll Down"
+  },
+  "skills": {
+    "contentbanner": "My Skills ",
+    "skills": {
+      "competencies": {
+        "title": "Competencies",
+        "list": ["Team Player", "Avid Learner", "Adaptability"]
+      },
+      "highlights": [
+        {
+          "content": "Currently pursuing Full Stack Development - BootCamp course at GUVI Geeks"
+        },
+        {
+          "content": "Enrolled and Completed Javascript Learner Course from GUVI",
+          "link": "https://www.guvi.in/verify-certificate?id=2z64uM1641872TO823"
+        },
+        {
+          "content": "Participated in 30days Codekata Challenge organized by GUVI Geeks",
+          "link": "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link"
+        },
+        {
+          "content": "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu"
+        }
+      ]
+    },
+    "keyskills": [
+      {
+        "name": "HTML",
+        "image": "https://img.icons8.com/color/256/html-5.png"
+      },
+      {
+        "name": "CSS",
+        "image": "https://img.icons8.com/color/256/css3.png"
+      },
+      {
+        "name": "Javascript",
+        "image": "https://img.icons8.com/fluency/256/javascript.png"
+      },
+      {
+        "name": "BootStrap",
+        "image": "https://img.icons8.com/color/256/bootstrap.png"
+      },
+      {
+        "name": "MongoDB",
+        "image": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"
+      },
+      {
+        "name": "React JS",
+        "image": "https://img.icons8.com/color/256/react-native.png"
+      },
+      {
+        "name": "Material UI",
+        "image": "https://img.icons8.com/color/256/material-ui.png"
+      },
+      {
+        "name": "NodeJS",
+        "image": "https://img.icons8.com/color/256/nodejs.png"
+      }
+    ]
+  },
+  "projects": {
+    "contentbanner": "My Project",
+    "subheader": "What I Contributed ..!",
+    "projectlists": [
+      {
+        "id": 1,
+        "alt": "indiapost",
+        "category": "MERN",
+        "image": "https://images.unsplash.com/photo-1578234070702-2dd970cdae30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+        "linkFr": "https://github.com/Sathiyapramod/IndiaPost_Simple_PostOffice-API",
+        "linkBe": "",
+        "live": "https://indiapost-sathiyapramod.netlify.app/",
+        "title": "India Post - Get Details of Your Nearest Post Office",
+        "text": "Made with HTML and Bootstrap, User can avail Post Offices Details around their location by simply searching the Place names"
+      },
+      {
+        "id": 2,
+        "alt": "TodoPlanner",
+        "category": "MERN",
+        "image": "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHBsYW5uZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "linkFr": "https://github.com/Sathiyapramod/To_Do_App",
+        "linkBe": "",
+        "live": "https://todoapp-sathiyapramod.netlify.app/",
+        "title": "Simple Todo App - built with all CRUD Operations",
+        "text": "Made with ReactJS, Implements the basic requirements of a Daily To Do Manager App"
+      },
+      {
+        "id": 3,
+        "alt": "blog-website",
+        "category": "MERN",
+        "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbmFsJTIwYmxvZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+        "link1Fr": "https://github.com/Sathiyapramod/Blog-Website",
+        "linkBe": "",
+        "live": "https://blog-sathiyapramod.netlify.app/",
+        "title": "Personal Blog Web Design",
+        "text": "Simple Blog Design for knowing the latest advancements in Daily Life of Web Developer 😉"
+      }
+    ],
+    "visitorAction1": "See Code",
+    "visitorAction2": "Go Live"
+  },
+  "contact": {
+    "footerheading": "Networking is always Good 😊 !!",
+    "footersubheading": "Share your feedback below",
+    "basicdata": {
+      "formdata": {
+        "name": "Name",
+        "email": "E-mail Id",
+        "message": "Message"
+      },
+      "formAction": "Send Feedback"
+    },
+    "Mydetails": {
+      "myemailId": "sathiyapramod22@gmail.com",
+      "myphoneNo": "+91 9597097508",
+      "myResumeLink": "https://drive.google.com/file/d/14dRhP9HOafaaWZaSfs1dhARfwA20AKW5/view?usp=share_link",
+      "visitorAction1": "DOWNLOAD RESUME"
+    },
+    "githublink": "https://github.com/Sathiyapramod",
+    "linkedinProfile": "https://www.linkedin.com/in/sathiyapramod/",
+    "scrollAction": "Go Back to Top",
+    "Copyrights": "Made by Sathiyapramod with 😊 | 2023 | All Rights Reserved"
+  }
+}

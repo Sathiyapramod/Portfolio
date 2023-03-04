@@ -14,15 +14,17 @@ export const anchorStyle = {
   color: "white",
 };
 
-function Landing() {
-  const isDesktop = useMediaquery("(min-width:768px)");
- 
+export const iconStyling = {
+  color: "black",
+};
 
+function Landing(props) {
+  const isDesktop = useMediaquery("(min-width:768px)");
   return (
     <section id="home">
       <div className="content-banner-landing">
-        About Me
-        <span className="tilted-about">Hello !</span>
+        {props.data.contentbanner}
+        <span className="tilted-about">{props.data.tilted}</span>
       </div>
       <div className="landing">
         <div className="landing-content">
@@ -38,16 +40,17 @@ function Landing() {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <span> 👋🏻 Sathiyapramod </span>
+              <span>{props.data.name}</span>
             </motion.div>
           </div>
           <div className="bio">
-            I am a <br />
+            {props.data.span1}
+            <br />
             <span>
               <span className="typewriter">
                 <Typewriter
                   options={{
-                    strings: ["FullStack Developer", "Quick Learner"],
+                    strings: props.data.typertext,
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 90,
@@ -56,14 +59,8 @@ function Landing() {
               </span>
             </span>
             <br />
-            Being an Enthusiastic & Competitive Team player, Seeking Jobs on Web
-            Development , blended with knowledge of Front-End and Back-End
-            elements, I am mostly prioritizing on understanding Client
-            Requirements and developing the Web Contents from scratch idea to
-            Final Stage. Currently, I am keenly focusing on Front-End
-            Development.
+            {props.data.bio}
           </div>
-
           <span className="landing-button">
             <motion.div
               initial="hidden"
@@ -92,7 +89,7 @@ function Landing() {
                 }}
               >
                 <a href="#contact" style={anchorStyle}>
-                  LET'S DISCUSS
+                  {props.data.buttonContent}
                 </a>
               </Button>
             </motion.div>
@@ -109,10 +106,22 @@ function Landing() {
               }}
             >
               <IconButton color="inherit">
-                <GitHubIcon sx={{ fontSize: 30 }} />
+                <a
+                  href={props.data.links.github}
+                  rel="noreferrer"
+                  style={iconStyling}
+                >
+                  <GitHubIcon sx={{ fontSize: 30 }} />
+                </a>
               </IconButton>
               <IconButton color="inherit">
-                <LinkedInIcon sx={{ fontSize: 30 }} />
+                <a
+                  href={props.data.links.linkedin}
+                  rel="noreferrer"
+                  style={iconStyling}
+                >
+                  <LinkedInIcon sx={{ fontSize: 30 }} />
+                </a>
               </IconButton>
             </motion.div>
           </span>
@@ -133,7 +142,7 @@ function Landing() {
             </div>
           </motion.div>
         </div>
-        <div className="scroll-down">Scroll Down</div>
+        <div className="scroll-down">{props.data.scrollNotifier}</div>
       </div>
     </section>
   );
