@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import useMediaquery from "../../Hooks/useMediaquery";
 import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
+import { anchorStyle } from "../Landing/Landing";
 
 function Navbar() {
   const [isMenuToggled, setMenuToggled] = useState(false);
@@ -32,10 +33,7 @@ function Navbar() {
       {isDesktop ? (
         <div className="navbar" style={navbarColor}>
           <div className="logo">Sathiyapramod</div>
-          <div
-            className="menu-links"
-            style={navbarColor}
-          >
+          <div className="menu-links" style={navbarColor}>
             {["HOME", "SKILLS", "PROJECTS", "CONTACT"].map((element, index) => {
               const page = element.toLowerCase();
               return (
@@ -63,7 +61,9 @@ function Navbar() {
                 },
               }}
             >
-              Hire Me !
+              <a href="#contact" style={anchorStyle}>
+                Hire Me !
+              </a>
             </Button>
           </div>
         </div>

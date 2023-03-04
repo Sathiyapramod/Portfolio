@@ -9,12 +9,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import profile from "../../../src/assets/profilePic.jpeg";
 import Typewriter from "typewriter-effect";
 
+export const anchorStyle = {
+  textDecoration: "none",
+  color: "white",
+};
+
 function Landing() {
   const isDesktop = useMediaquery("(min-width:768px)");
-  const anchorStyle = {
-    textDecoration: "none",
-    color: "white",
-  };
+ 
 
   return (
     <section id="home">
