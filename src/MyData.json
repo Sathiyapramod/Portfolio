@@ -93,17 +93,6 @@
         "text": "Made with HTML and Bootstrap, User can avail Post Offices Details around their location by simply searching the Place names"
       },
       {
-        "id": 2,
-        "alt": "TodoPlanner",
-        "category": "MERN",
-        "image": "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHBsYW5uZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "linkFr": "https://github.com/Sathiyapramod/To_Do_App",
-        "linkBe": "",
-        "live": "https://todoapp-sathiyapramod.netlify.app/",
-        "title": "Simple Todo App - built with all CRUD Operations",
-        "text": "Made with ReactJS, Implements the basic requirements of a Daily To Do Manager App"
-      },
-      {
         "id": 3,
         "alt": "blog-website",
         "category": "MERN",
@@ -113,6 +102,17 @@
         "live": "https://blog-sathiyapramod.netlify.app/",
         "title": "Personal Blog Web Design",
         "text": "Simple Blog Design for knowing the latest advancements in Daily Life of Web Developer 😉"
+      },
+      {
+        "id": 4,
+        "alt": "Image-Gallery",
+        "category": "MERN",
+        "image": "https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1218&q=80",
+        "link1Fr": "https://github.com/Sathiyapramod/Photo_API_Unsplash",
+        "linkBe": "",
+        "live": "https://blog-sathiyapramod.netlify.app/",
+        "title": "Image Gallery",
+        "text": "Photo Gallery Made with API Fetch calls from UnSPlash API, Designed with ReactJS and Material UI"
       }
     ],
     "visitorAction1": "See Code",
