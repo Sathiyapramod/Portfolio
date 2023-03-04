@@ -40,7 +40,7 @@ function Landing() {
             </motion.div>
           </div>
           <div className="bio">
-            I am a{" "} <br />
+            I am a <br />
             <span>
               <span className="typewriter">
                 <Typewriter
@@ -131,6 +131,7 @@ function Landing() {
             </div>
           </motion.div>
         </div>
+        <div className="scroll-down">Scroll Down</div>
       </div>
     </section>
   );

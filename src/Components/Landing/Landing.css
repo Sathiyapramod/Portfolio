@@ -5,7 +5,9 @@
 }
 
 #home {
-    padding:4rem 0 4rem 0;
+    padding: 4rem 0 4rem 0;
+    background-color: #FCFBFA;
+
 }
 
 .content-banner-landing {
@@ -22,7 +24,7 @@
     display: block;
     width: 20rem;
     height: 0.5rem;
-    border-bottom: 5px solid  #9A6936;
+    border-bottom: 5px solid #9A6936;
     transform: scale(0);
     transform-origin: bottom left;
     transition: transform 0.9s ease-in;
@@ -103,6 +105,20 @@
 
 .landing-button {
     padding: 1rem 0 1rem 0;
+}
+
+.scroll-down {
+    background-color: #FCFBFA;
+    display: block;
+    height: 15rem;
+    position: absolute;
+    font-family: var(--landing-ff);
+    font-size: 1rem;
+    font-weight: 600;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    top: 38rem;
+    right: 5px;
 }
 
 @media screen and (min-width: 200px) and (max-width:768px) {
