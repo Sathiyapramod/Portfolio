@@ -5,6 +5,11 @@ import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
+export const anchorStyle = {
+  textDecoration: "none",
+  color: "white",
+};
+
 function Projects(props) {
   return (
     <div id="projects">
@@ -63,8 +68,10 @@ function Projects(props) {
                       },
                     }}
                   >
-                    {props.data.visitorAction2}
-                    <ArrowOutwardIcon />
+                    <a href={project.live} target="_blank" rel="noreferrer" style={anchorStyle}>
+                      {props.data.visitorAction2}
+                      <ArrowOutwardIcon />
+                    </a>
                   </Button>
                 </div>
               </Paper>
