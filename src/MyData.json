@@ -131,7 +131,7 @@
         "email": "E-mail Id",
         "message": "Message"
       },
-      "formAction": "Send Feedback"
+      "formAction": "Send Message"
     },
     "Mydetails": {
       "myemailId": "sathiyapramod22@gmail.com",
