@@ -1,6 +1,7 @@
 import React from "react";
 import "../Footer/Footer.css";
 import { Paper } from "@mui/material";
+import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 function BasicForm(props) {
@@ -8,35 +9,35 @@ function BasicForm(props) {
     <div>
       <Paper
         sx={{
-          width: { sx: 250, md: 450 },
-          paddingTop: 5,
-          paddingBottom: 5,
+          width: { sx: 250, md: 350 },
+          padding: 5,
         }}
         elevation={6}
         className="basicform"
       >
         <form className="d-flex flex-column gap-3">
           <div className="d-flex flex-row gap-3 align-items-center">
-            <label className="form-label col-3">
-              {props.basicdata.formdata.name}
-            </label>
-            <input type="text" className="form-control me-2"></input>
+            <TextField
+              variant="standard"
+              label={props.basicdata.formdata.name}
+              size="small"
+              fullWidth
+            />
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
-            <label className="form-label col-3">
-              {props.basicdata.formdata.email}
-            </label>
-            <input type="text" className="form-control me-2"></input>
+            <TextField
+              variant="standard"
+              label={props.basicdata.formdata.email}
+              size="small"
+            />
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
-            <label className="form-label col-3">
-              {props.basicdata.formdata.message}
-            </label>
-            <textarea
-              type="text"
-              className="form-control me-2"
-              rows="4"
-              cols="4"
+            <TextField
+              variant="standard"
+              label={props.basicdata.formdata.message}
+              multiline
+              rows={4}
+              fullWidth
             />
           </div>
           <div>
