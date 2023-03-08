@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Button } from "@mui/material";
 import BasicForm from "./BasicForm";
 import Details from "./Details";
+import { iconStyling } from "../Landing/Landing";
 
 function Footer(props) {
   return (
@@ -23,7 +24,7 @@ function Footer(props) {
           href={props.data.githublink}
           target="_blank"
           rel="noreferrer"
-          className=""
+          style={iconStyling}
         >
           <Button
             startIcon={<GitHubIcon />}
@@ -36,7 +37,7 @@ function Footer(props) {
           href={props.data.linkedinProfile}
           target="_blank"
           rel="noreferrer"
-          className=""
+          style={iconStyling}
         >
           <Button
             startIcon={<LinkedInIcon />}

@@ -4,11 +4,8 @@ import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import { anchorStyle } from "../Landing/Landing";
 
-export const anchorStyle = {
-  textDecoration: "none",
-  color: "white",
-};
 
 function Projects(props) {
   return (
