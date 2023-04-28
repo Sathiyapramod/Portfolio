@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+:root {
+    --special-ff: 'Covered By Your Grace', cursive;
+}
+
+@keyframes lights {
+    0% {
+        color: white;
+        transform: scaleY(0.2);
+    }
+
+    30% {
+        color: lightgoldenrodyellow;
+        transform: scaleY(0.4);
+    }
+
+    60% {
+        color: yellowgreen;
+        transform: scaleY(0.6);
+    }
+
+    100% {
+        color: wheat;
+        transform: scaleY(1);
+    }
+}
+
+.background-Theme {
+    background-color: navy;
+    min-height: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    margin: auto;
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: var(--special-ff);
+    color: white;
+    animation: lights 0.6s 350ms ease-in-out;
+}
+
+@media screen and (min-width : 350px) and (max-width: 550px) {
+    .intro {
+        font-size: 2.5rem;
+    }
+}
