@@ -3,19 +3,12 @@ import { easeInOut, motion } from "framer-motion";
 import "./Intro.css";
 
 function Intro() {
-  const Styling = {
-    visible: {
-      transition: {
-        staggerChildren: 0.025,
-      },
-    },
-  };
   return (
     <div className="background-Theme">
       <motion.span
-        animate={{ x: 0, opacity: 1 }}
-        initial={{ x: 50, opacity: 0.5 }}
-        transition={{ duration: 0.5, transition: "linear" }}
+        initial={{ x: 0, opacity: 0.3, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1, type: "spring", easeInOut }}
       >
         <span className="intro">Sathiyapramod</span>
       </motion.span>
