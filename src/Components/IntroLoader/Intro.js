@@ -1,21 +1,24 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import "./Intro.css";
 
 function Intro() {
+  const Styling = {
+    visible: {
+      transition: {
+        staggerChildren: 0.025,
+      },
+    },
+  };
   return (
     <div className="background-Theme">
-      <motion.div
-        animate={{
-          x: -20,
-          y: 1,
-          scale: 1.05,
-          rotate: 0,
-        }}
-        initial="hidden"
+      <motion.span
+        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: 50, opacity: 0.5 }}
+        transition={{ duration: 0.5, transition: "linear" }}
       >
         <span className="intro">Sathiyapramod</span>
-      </motion.div>
+      </motion.span>
     </div>
   );
 }
