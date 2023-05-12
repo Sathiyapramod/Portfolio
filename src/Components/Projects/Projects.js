@@ -6,7 +6,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { anchorStyle } from "../Landing/Landing";
 
-
 function Projects(props) {
   return (
     <div id="projects">
@@ -22,17 +21,20 @@ function Projects(props) {
             return (
               <Paper
                 key={index}
-                sx={{ width: { xs: 290, sm: 425 }, height: 550 }}
+                sx={{
+                  width: { xs: 290, sm: 425 },
+                  height: 600,
+                  padding: "1rem",
+                }}
                 elevation={6}
                 className="project-card"
               >
-                <div>
-                  <img
-                    src={project.image}
-                    alt={project.alt}
-                    className="project-image"
-                  />
-                </div>
+                <img
+                  src={project.image}
+                  alt={project.alt}
+                  className="project-image"
+                />
+
                 <div className="titleblock">{project.title}</div>
                 <div className="project-text">{project.text}</div>
                 <div className="action-buttons">
@@ -49,8 +51,15 @@ function Projects(props) {
                       },
                     }}
                   >
-                    <GitHubIcon />
-                    {props.data.visitorAction1}
+                    <a
+                      href={project.link1Fr}
+                      style={anchorStyle}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <GitHubIcon />
+                      {props.data.visitorAction1}
+                    </a>
                   </Button>
                   <Button
                     variant="contained"
@@ -65,11 +74,43 @@ function Projects(props) {
                       },
                     }}
                   >
-                    <a href={project.live} target="_blank" rel="noreferrer" style={anchorStyle}>
-                      {props.data.visitorAction2}
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={anchorStyle}
+                    >
+                      {project.linkBe !== ""
+                        ? props.data.Action2Alternate
+                        : props.data.visitorAction2}
                       <ArrowOutwardIcon />
                     </a>
                   </Button>
+                  {project.linkBe !== "" && (
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      sx={{
+                        backgroundColor: "#756BEE",
+                        "&:hover": {
+                          backgroundColor: "black",
+                          fontWeight: 300,
+                          paddingLeft: { xs: 1, sm: 3 },
+                          paddingRight: { xs: 1, sm: 3 },
+                        },
+                      }}
+                    >
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={anchorStyle}
+                      >
+                        {props.data.visitorAction3}
+                        <ArrowOutwardIcon />
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </Paper>
             );
