@@ -35,7 +35,7 @@ function Skills(props) {
               return (
                 <span className="skill-content" key={index}>
                   <span> ✅ {content.content}</span>
-                  {index >= 1 && index <= 2 ? (
+                  {index >= 1 && index <= 3 && (
                     <a
                       href={content.link}
                       style={linkStyling}
@@ -55,8 +55,6 @@ function Skills(props) {
                         <ArrowOutwardIcon fontSize="small" />
                       </IconButton>
                     </a>
-                  ) : (
-                    ""
                   )}
                 </span>
               );

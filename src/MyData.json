@@ -38,8 +38,11 @@
           "link": "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link"
         },
         {
-          "content": "Having Previous Work Experience as a Civil Engineer/Manager at Larsen & Toubro Limited(2014-2022)",
-          "link": "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link"
+          "content":"Enrolled and Completed SQL (Basic) certification from HackerRank",
+          "link":"https://www.hackerrank.com/certificates/86727671f816"
+        },
+        {
+          "content": "Having Previous Work Experience as a Civil Engineer/Manager at Larsen & Toubro Limited(2014-2022)"
         },
         {
           "content": "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu"
@@ -108,7 +111,6 @@
         "text": "Simple Design for maintaining and managing the Day-to-Day activities"
       },
       {
-        
         "id": 1,
         "alt": "indiapost",
         "category": "MERN",
@@ -141,9 +143,6 @@
         "title": "Image Gallery",
         "text": "Photo Gallery Made with API Fetch calls from UnSPlash API, Designed with ReactJS and Material UI"
       }
-      
-      
-
     ],
     "visitorAction1": "See Code",
     "visitorAction2": "Go Live"
