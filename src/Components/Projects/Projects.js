@@ -23,8 +23,8 @@ function Projects(props) {
                 key={index}
                 sx={{
                   width: { xs: 290, sm: 425 },
-                  height: 600,
-                  padding: "1rem",
+                  height: 580,
+                  padding: "1.2rem",
                 }}
                 elevation={6}
                 className="project-card"
