@@ -17,6 +17,8 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   easing: "easeInQuad",
 });
 
+
+
 function App() {
   const [isLogoRequired, setLogoRequired] = useState(true);
 
@@ -45,6 +47,7 @@ function App() {
           <Skills data={data.skills} />
           <Projects data={data.projects} />
           <Footer data={data.contact} />
+          
         </div>
       )}
     </div>

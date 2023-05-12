@@ -10,7 +10,6 @@ import { anchorStyle } from "../Landing/Landing";
 function Navbar(props) {
   const [isMenuToggled, setMenuToggled] = useState(false);
   const isDesktop = useMediaquery("(min-width:768px)");
-  //setting state to change the values while scrolling
   const [scrollbg, setScrollbg] = useState(false);
 
   const ChangeBackground = () => {
@@ -48,6 +47,7 @@ function Navbar(props) {
               );
             })}
           </div>
+
           <div className="hire-button">
             <Button
               variant="contained"
