@@ -1,12 +1,13 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../Footer/Footer.css";
 import { Paper } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 
 function BasicForm(props) {
-  
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,8 +18,22 @@ function BasicForm(props) {
         form.current,
         process.env.REACT_APP_PUBLIC_KEY
       )
-      .then((result)=>console.log(result),(error)=>console.log(error));
+      .then(
+        (result) => console.log(result),
+        (error) => console.log(error)
+      );
   };
+
+  const [dataSent, setStatus] = useState(false);
+
+  const handleSubmission = () => {
+    setStatus(true);
+  };
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") return;
+    setStatus(false);
+  };
+
   return (
     <div>
       <Paper
@@ -29,7 +44,11 @@ function BasicForm(props) {
         elevation={6}
         className="basicform"
       >
-        <form className="d-flex flex-column gap-3" ref={form} onSubmit={sendEmail}>
+        <form
+          className="d-flex flex-column gap-3"
+          ref={form}
+          onSubmit={sendEmail}
+        >
           <div className="d-flex flex-row gap-3 align-items-center">
             <TextField
               variant="standard"
@@ -63,6 +82,7 @@ function BasicForm(props) {
               type="submit"
               value="Send"
               color="primary"
+              onClick={handleSubmission}
               sx={{
                 backgroundColor: "#756BEE",
                 "&:hover": {
@@ -75,6 +95,21 @@ function BasicForm(props) {
             >
               {props.basicdata.formAction}
             </Button>
+            <Snackbar
+              open={dataSent}
+              autoHideDuration={5000}
+              onClose={handleClose}
+              
+            >
+              <Alert
+                onClose={handleClose}
+                variant="filled"
+                severity="success"
+                sx={{ width: "100%" }}
+              >
+                E-mail Sent Successfully
+              </Alert>
+            </Snackbar>
           </div>
         </form>
       </Paper>
