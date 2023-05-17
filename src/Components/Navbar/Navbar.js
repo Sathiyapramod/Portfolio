@@ -23,7 +23,7 @@ function Navbar(props) {
   }, []);
 
   const navbarColor = {
-    backgroundColor: scrollbg ? "navy" : "#FCFBFA",
+    backgroundColor: scrollbg ? "#000044" : "#FCFBFA",
     color: scrollbg ? "white" : "black",
   };
 
