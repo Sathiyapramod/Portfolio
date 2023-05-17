@@ -24,7 +24,7 @@ function Projects(props) {
                 key={index}
                 sx={{
                   width: { xs: 290, sm: 425 },
-                  height: 680,
+                  height: 580,
                   padding: "1.2rem",
                 }}
                 elevation={6}
