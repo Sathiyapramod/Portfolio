@@ -90,7 +90,7 @@
     "projectlists": [
       {
         "id": 1,
-        "alt": "Billing App",
+        "alt": "Billing App(Desktop)",
         "category": "MERN",
         "image": "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGVjb21tZXJjZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
         "link1Fr": "https://github.com/Sathiyapramod/Inventory-App-frontend",
@@ -98,6 +98,17 @@
         "live": "https://capstone-final-sathiyapramod.netlify.app/",
         "title": "Billing App",
         "text": "BILLING APP is a beginner level template used for commercial and business use for maintaining Stocks, Bills, Purchase Orders "
+      },
+      {
+        "id": 1,
+        "alt": "CRM Web App",
+        "category": "MERN",
+        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "link1Fr": "https://github.com/Sathiyapramod/CRM-web-app-frontend",
+        "linkBe": "https://github.com/Sathiyapramod/CRM-App-backend",
+        "live": "https://crm-app-sathiyapramod.netlify.app/",
+        "title": "CRM Web App",
+        "text": "CRM APP is used in maintaining all commercial use for reviewing customer contacts, leads and Service Requests "
       },
       {
         "id": 2,
@@ -124,7 +135,7 @@
       {
         "id": 4,
         "alt": "blog-website",
-        "category": "Front-end",
+        "category": "FE",
         "image": "https://images.unsplash.com/photo-1527656855834-0235e41779fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fHNpbXBsZSUyMGJsb2d8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "link1Fr": "https://github.com/Sathiyapramod/Blog-Website",
         "linkBe": "",
@@ -135,7 +146,7 @@
       {
         "id": 5,
         "alt": "Image-Gallery",
-        "category": "Front-end",
+        "category": "FE",
         "image": "https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1218&q=80",
         "link1Fr": "https://github.com/Sathiyapramod/Photo_API_Unsplash",
         "linkBe": "",

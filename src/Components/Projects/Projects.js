@@ -3,6 +3,7 @@ import "./Projects.css";
 import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Chip from "@mui/material/Chip";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { anchorStyle } from "../Landing/Landing";
 
@@ -23,7 +24,7 @@ function Projects(props) {
                 key={index}
                 sx={{
                   width: { xs: 290, sm: 425 },
-                  height: 580,
+                  height: 680,
                   padding: "1.2rem",
                 }}
                 elevation={6}
@@ -112,6 +113,10 @@ function Projects(props) {
                     </Button>
                   )}
                 </div>
+                <span>
+                  Tags:{" "}
+                  <Chip label={project.category} variant="outlined"></Chip>
+                </span>
               </Paper>
             );
           })}
