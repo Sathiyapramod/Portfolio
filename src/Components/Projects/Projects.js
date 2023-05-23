@@ -23,8 +23,8 @@ function Projects(props) {
               <Paper
                 key={index}
                 sx={{
-                  width: { xs: 290, sm: 425 },
-                  height: 580,
+                  width: { xs: 300, sm: 425 },
+                  height: 650,
                   padding: "1.2rem",
                 }}
                 elevation={6}
@@ -81,9 +81,7 @@ function Projects(props) {
                       rel="noreferrer"
                       style={anchorStyle}
                     >
-                      {project.linkBe !== ""
-                        ? props.data.Action2Alternate
-                        : props.data.visitorAction2}
+                      {props.data.visitorAction2}
                       <ArrowOutwardIcon />
                     </a>
                   </Button>
@@ -102,7 +100,7 @@ function Projects(props) {
                       }}
                     >
                       <a
-                        href={project.live}
+                        href={project.linkBe}
                         target="_blank"
                         rel="noreferrer"
                         style={anchorStyle}
@@ -117,6 +115,18 @@ function Projects(props) {
                   Tags:{" "}
                   <Chip label={project.category} variant="outlined"></Chip>
                 </span>
+
+                {project.credentials !== "" ? (
+                  <span>
+                    For Admin Role, type {" "}
+                    <b>{project.credentials.admin.username}</b> , password :{" "}
+                    <b>{project.credentials.admin.password}</b>
+                    <br />
+                    For Users, type {" "}
+                    <b>{project.credentials.user.username}</b> , password :{" "}
+                    <b>{project.credentials.user.password}</b>
+                  </span>
+                ) : <span>Credentials Open</span>}
               </Paper>
             );
           })}

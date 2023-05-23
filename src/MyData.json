@@ -12,7 +12,7 @@
     "name": "👋🏻 Sathiyapramod K R",
     "bio": "Being an Enthusiastic & Competitive Team player, Seeking Jobs on Web Development , blended with knowledge of Front-End and Back-End elements, I am mostly prioritizing on understanding Client Requirements and developing the Web Contents from scratch idea to Final Stage. Currently, I am keenly focusing on Front-End Development.",
     "buttonContent": "LET'S DISCUSS",
-    "resumeContent" : "https://drive.google.com/file/d/1VO778AzP466CBZ6YBekDX00TtAClNaia/view?usp=share_link",
+    "resumeContent": "https://drive.google.com/file/d/1VO778AzP466CBZ6YBekDX00TtAClNaia/view?usp=share_link",
     "links": {
       "github": "https://github.com/Sathiyapramod",
       "linkedin": "https://www.linkedin.com/in/sathiyapramod/"
@@ -98,7 +98,17 @@
         "linkBe": "https://github.com/Sathiyapramod/Inventory-App-backend",
         "live": "https://capstone-final-sathiyapramod.netlify.app/",
         "title": "Billing App",
-        "text": "BILLING APP is a beginner level template used for commercial and business use for maintaining Stocks, Bills, Purchase Orders "
+        "text": "BILLING APP is a beginner level template used for commercial and business use for maintaining Stocks, Bills, Purchase Orders ",
+        "credentials": {
+          "admin": {
+            "username": "sathiya",
+            "password": "123456"
+          },
+          "user": {
+            "username": "steve",
+            "password": "789456"
+          }
+        }
       },
       {
         "id": 1,
@@ -109,7 +119,17 @@
         "linkBe": "https://github.com/Sathiyapramod/CRM-App-backend",
         "live": "https://crm-app-sathiyapramod.netlify.app/",
         "title": "CRM Web App",
-        "text": "CRM APP is used in maintaining all commercial use for reviewing customer contacts, leads and Service Requests "
+        "text": "CRM APP is used in maintaining all commercial use for reviewing customer contacts, leads and Service Requests ",
+        "credentials": {
+          "admin": {
+            "username": "sathiya",
+            "password": "123456"
+          },
+          "user": {
+            "username": "john",
+            "password": "456789"
+          }
+        }
       },
       {
         "id": 2,
@@ -120,30 +140,10 @@
         "linkBe": "https://github.com/Sathiyapramod/ToDoApp-backend",
         "live": "https://todoapp-sathiyapramod.netlify.app/",
         "title": "To-Do-Manager App",
-        "text": "Simple Design for maintaining and managing the Day-to-Day activities"
+        "text": "Simple Design for maintaining and managing the Day-to-Day activities",
+        "credentials": ""
       },
-      {
-        "id": 3,
-        "alt": "indiapost",
-        "category": "MERN",
-        "image": "https://images.unsplash.com/photo-1578234070702-2dd970cdae30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
-        "linkFr": "https://github.com/Sathiyapramod/IndiaPost_Simple_PostOffice-API",
-        "linkBe": "",
-        "live": "https://indiapost-sathiyapramod.netlify.app/",
-        "title": "India Post - Get Details of Your Nearest Post Office",
-        "text": "Made with HTML and Bootstrap, User can avail Post Offices Details around their location by simply searching the Place names"
-      },
-      {
-        "id": 4,
-        "alt": "blog-website",
-        "category": "FE",
-        "image": "https://images.unsplash.com/photo-1527656855834-0235e41779fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fHNpbXBsZSUyMGJsb2d8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "link1Fr": "https://github.com/Sathiyapramod/Blog-Website",
-        "linkBe": "",
-        "live": "https://blog-sathiyapramod.netlify.app/",
-        "title": "Personal Blog Web Design",
-        "text": "Simple Blog Design for knowing the latest advancements in Daily Life of Web Developer 😉"
-      },
+
       {
         "id": 5,
         "alt": "Image-Gallery",
@@ -153,13 +153,25 @@
         "linkBe": "",
         "live": "https://photo-api-sathiyapramod.netlify.app/",
         "title": "Image Gallery",
-        "text": "Photo Gallery Made with API Fetch calls from UnSPlash API, Designed with ReactJS and Material UI"
+        "text": "Photo Gallery Made with API Fetch calls from UnSPlash API, Designed with ReactJS and Material UI",
+        "credentials": ""
+      },
+      {
+        "id": 3,
+        "alt": "indiapost",
+        "category": "FE",
+        "image": "https://images.unsplash.com/photo-1578234070702-2dd970cdae30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+        "link1Fr": "https://github.com/Sathiyapramod/IndiaPost_Simple_PostOffice-API",
+        "linkBe": "",
+        "live": "https://indiapost-sathiyapramod.netlify.app/",
+        "title": "India Post - Get Details of Your Nearest Post Office",
+        "text": "Made with HTML and Bootstrap, User can avail Post Offices Details around their location by simply searching the Place names",
+        "credentials": ""
       }
     ],
-    "visitorAction1": "See Code",
-    "visitorAction2": "Go Live",
-    "Action2Alternate": "View FE",
-    "visitorAction3": "View BE"
+    "visitorAction1": "Front-End",
+    "visitorAction2": "Hosting Link",
+    "visitorAction3": "Back-End"
   },
   "contact": {
     "footerheading": "Networking is always Good 😊 !!",
