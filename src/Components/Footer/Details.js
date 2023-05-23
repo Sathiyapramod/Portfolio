@@ -35,32 +35,6 @@ function BasicDetails(props) {
             <a href="tel:+919597097508">{props.Mydetails.myphoneNo}</a>
           </span>
         </div>
-        <div className="resume-button">
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{
-              backgroundColor: "#756BEE",
-              fontWeight: 500,
-              paddingLeft: { xs: 2, sm: 3 },
-              paddingRight: { xs: 2, sm: 3 },
-              "&:hover": {
-                backgroundColor: "black",
-              },
-            }}
-          >
-            <a
-              href={props.Mydetails.myResumeLink}
-              target="_blank"
-              style={anchorstyle}
-              rel="noreferrer"
-              download
-            >
-              <DownloadForOfflineOutlinedIcon />{" "}
-              {props.Mydetails.visitorAction1}
-            </a>
-          </Button>
-        </div>
       </div>
     </div>
   );
