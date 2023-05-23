@@ -106,6 +106,13 @@
 .landing-button {
     padding: 1rem 0 1rem 0;
 }
+.landing-button-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1.5rem;
+}
+
 
 .scroll-down {
     background-color: #FCFBFA;

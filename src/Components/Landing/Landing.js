@@ -72,26 +72,52 @@ function Landing(props) {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <Button
-                variant="outlined"
-                sx={{
-                  fontSize: isDesktop ? 16 : 12,
-                  backgroundColor: "#756BEE",
-                  color: "white",
-                  fontWeight: 500,
-                  paddingLeft: 4,
-                  paddingRight: 4,
-                  paddingTop: 2,
-                  paddingBottom: 2,
-                  "&:hover": {
-                    backgroundColor: "black",
-                  },
-                }}
-              >
-                <a href="#contact" style={anchorStyle}>
-                  {props.data.buttonContent}
-                </a>
-              </Button>
+              <span className="landing-button-actions">
+                <Button
+                  variant="outlined"
+                  sx={{
+                    fontSize: isDesktop ? 16 : 12,
+                    backgroundColor: "#756BEE",
+                    color: "white",
+                    fontWeight: 500,
+                    paddingLeft: 4,
+                    paddingRight: 4,
+                    paddingTop: 2,
+                    paddingBottom: 2,
+                    "&:hover": {
+                      backgroundColor: "black",
+                    },
+                  }}
+                >
+                  <a href="#contact" style={anchorStyle} rel="noreferrer">
+                    {props.data.buttonContent}
+                  </a>
+                </Button>
+                <Button
+                  sx={{
+                    fontSize: isDesktop ? 16 : 12,
+                    backgroundColor: "#756BEE",
+                    color: "white",
+                    fontWeight: 500,
+                    paddingLeft: 4,
+                    paddingRight: 4,
+                    paddingTop: 2,
+                    paddingBottom: 2,
+                    "&:hover": {
+                      backgroundColor: "black",
+                    },
+                  }}
+                >
+                  <a
+                    href={props.data.resumeContent}
+                    style={anchorStyle}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Download Resume
+                  </a>
+                </Button>
+              </span>
             </motion.div>
           </span>
           <span className="links">

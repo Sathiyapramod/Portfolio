@@ -12,6 +12,7 @@
     "name": "👋🏻 Sathiyapramod K R",
     "bio": "Being an Enthusiastic & Competitive Team player, Seeking Jobs on Web Development , blended with knowledge of Front-End and Back-End elements, I am mostly prioritizing on understanding Client Requirements and developing the Web Contents from scratch idea to Final Stage. Currently, I am keenly focusing on Front-End Development.",
     "buttonContent": "LET'S DISCUSS",
+    "resumeContent" : "https://drive.google.com/file/d/1VO778AzP466CBZ6YBekDX00TtAClNaia/view?usp=share_link",
     "links": {
       "github": "https://github.com/Sathiyapramod",
       "linkedin": "https://www.linkedin.com/in/sathiyapramod/"
@@ -38,8 +39,8 @@
           "link": "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link"
         },
         {
-          "content":"Enrolled and Completed SQL (Basic) certification from HackerRank",
-          "link":"https://www.hackerrank.com/certificates/86727671f816"
+          "content": "Enrolled and Completed SQL (Basic) certification from HackerRank",
+          "link": "https://www.hackerrank.com/certificates/86727671f816"
         },
         {
           "content": "Having Previous Work Experience as a Civil Engineer/Manager at Larsen & Toubro Limited(2014-2022)"
@@ -157,7 +158,7 @@
     ],
     "visitorAction1": "See Code",
     "visitorAction2": "Go Live",
-    "Action2Alternate" :"View FE",
+    "Action2Alternate": "View FE",
     "visitorAction3": "View BE"
   },
   "contact": {
