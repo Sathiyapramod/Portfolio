@@ -24,7 +24,7 @@ function Projects(props) {
                 key={index}
                 sx={{
                   width: { xs: 300, sm: 425 },
-                  height: 650,
+                  height: 675,
                   padding: "1.2rem",
                 }}
                 elevation={6}
@@ -115,18 +115,19 @@ function Projects(props) {
                   Tags:{" "}
                   <Chip label={project.category} variant="outlined"></Chip>
                 </span>
-
+                <br />
                 {project.credentials !== "" ? (
                   <span>
-                    For Admin Role, type {" "}
+                    For Admin Role, type{" "}
                     <b>{project.credentials.admin.username}</b> , password :{" "}
                     <b>{project.credentials.admin.password}</b>
                     <br />
-                    For Users, type {" "}
-                    <b>{project.credentials.user.username}</b> , password :{" "}
-                    <b>{project.credentials.user.password}</b>
+                    For Users, type <b>{project.credentials.user.username}</b> ,
+                    password : <b>{project.credentials.user.password}</b>
                   </span>
-                ) : <span>Credentials Open</span>}
+                ) : (
+                  <span>Credentials Open</span>
+                )}
               </Paper>
             );
           })}
