@@ -47,7 +47,6 @@ function Navbar(props) {
               );
             })}
           </div>
-
           <div className="hire-button">
             <Button
               variant="contained"
@@ -69,7 +68,9 @@ function Navbar(props) {
         </div>
       ) : (
         <div className="navbar" style={navbarColor}>
-          <div className="logo">{props.data.logo}</div>
+          <div className="logo">
+            Sathiyapramod
+          </div>
           <div className="menu-toggled" style={navbarColor}>
             <Button
               variant="text"
