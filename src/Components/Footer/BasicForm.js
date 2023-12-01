@@ -56,6 +56,7 @@ function BasicForm(props) {
               label={props.basicdata.formdata.name}
               size="small"
               fullWidth
+              required 
             />
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
@@ -64,6 +65,7 @@ function BasicForm(props) {
               name="user_email"
               label={props.basicdata.formdata.email}
               size="small"
+              required 
             />
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
@@ -74,6 +76,7 @@ function BasicForm(props) {
               multiline
               rows={4}
               fullWidth
+              required 
             />
           </div>
           <div>
