@@ -23,7 +23,7 @@ function BasicForm(props) {
           console.log(result);
           if(result.status !== 200)
             setStatus(false);
-          setStatus(true);
+          else setStatus(true);
         },
         (err) => {
           console.error(err);
