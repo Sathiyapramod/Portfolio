@@ -19,8 +19,16 @@ function BasicForm(props) {
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
-        (result) => console.log(result),
-        (error) => console.log(error)
+        (result) => {
+          console.log(result);
+          if(result.status !== 200)
+            setStatus(false);
+          setStatus(true);
+        },
+        (err) => {
+          console.error(err);
+          setStatus(false);
+        }
       );
   };
 
