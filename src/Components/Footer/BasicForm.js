@@ -34,6 +34,7 @@ function BasicForm(props) {
             setStatus(false);
           }
         );
+      form.current.reset();
     }
   };
 
