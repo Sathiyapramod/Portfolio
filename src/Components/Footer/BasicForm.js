@@ -11,32 +11,34 @@ function BasicForm(props) {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          if(result.status === 200)
-            setStatus(true);
-          else setStatus(false);
-        },
-        (err) => {
-          console.error(err);
-          setStatus(false);
-        }
-      );
+    let feedBackInputs = ["user_name", "user_email", "user_message"].map(
+      (item) => form.current[item].value
+    );
+
+    if (!feedBackInputs.includes("")) {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          form.current,
+          process.env.REACT_APP_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            console.log(result);
+            if (result.status === 200) setStatus(true);
+            else setStatus(false);
+          },
+          (err) => {
+            console.error(err);
+            setStatus(false);
+          }
+        );
+    }
   };
 
   const [dataSent, setStatus] = useState(false);
 
-  const handleSubmission = () => {
-    setStatus(true);
-  };
   const handleClose = (event, reason) => {
     if (reason === "clickaway") return;
     setStatus(false);
@@ -64,7 +66,7 @@ function BasicForm(props) {
               label={props.basicdata.formdata.name}
               size="small"
               fullWidth
-              required 
+              required
             />
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
@@ -73,7 +75,7 @@ function BasicForm(props) {
               name="user_email"
               label={props.basicdata.formdata.email}
               size="small"
-              required 
+              required
             />
           </div>
           <div className="d-flex flex-row gap-3 align-items-center">
@@ -84,7 +86,7 @@ function BasicForm(props) {
               multiline
               rows={4}
               fullWidth
-              required 
+              required
             />
           </div>
           <div>
@@ -93,7 +95,6 @@ function BasicForm(props) {
               type="submit"
               value="Send"
               color="primary"
-              onClick={handleSubmission}
               sx={{
                 backgroundColor: "#756BEE",
                 "&:hover": {
@@ -110,7 +111,6 @@ function BasicForm(props) {
               open={dataSent}
               autoHideDuration={5000}
               onClose={handleClose}
-              
             >
               <Alert
                 onClose={handleClose}
