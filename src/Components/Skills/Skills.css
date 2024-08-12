@@ -190,3 +190,17 @@
         font-size: 1.2rem;
     }
 }
+
+@media screen and (min-width:998px) {
+    .content-1 {
+        padding: 3rem 0 3rem 6rem;
+    }
+
+    .skills-description {
+        padding: 0 3rem 0 3rem;
+    }
+
+    .skills-icons {
+        padding: 4rem;
+    }
+}

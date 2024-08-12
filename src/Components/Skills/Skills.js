@@ -17,9 +17,7 @@ function Skills(props) {
       <div className="content">
         <div className="content-1">
           <div className="skills-description">
-            <div className="competency-title">
-              {props.data.skills.competencies.title}
-            </div>
+            <div className="competency-title">{props.data.skills.competencies.title}</div>
             <div className="competencies">
               {props.data.skills.competencies.list.map((skill, index) => {
                 return (
@@ -34,14 +32,9 @@ function Skills(props) {
             {props.data.skills.highlights.map((content, index) => {
               return (
                 <span className="skill-content" key={index}>
-                  <span> ✅ {content.content}</span>
+                  <span> ✅ &nbsp; &nbsp;{content.content}</span>
                   {index >= 1 && index <= 3 && (
-                    <a
-                      href={content.link}
-                      style={linkStyling}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href={content.link} style={linkStyling} target="_blank" rel="noreferrer">
                       <IconButton
                         size="small"
                         sx={{
