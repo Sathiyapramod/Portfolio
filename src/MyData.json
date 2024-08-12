@@ -82,6 +82,14 @@
       {
         "name": "NodeJS (Express)",
         "image": "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
+      },
+      {
+        "name": "TypeScript",
+        "image": "https://img.icons8.com/?size=160&id=Xf1sHBmY73hA&format=png"
+      },
+      {
+        "name": "MySQL",
+        "image": "https://img.icons8.com/fluency/240w/mysql-logo.png"
       }
     ]
   },
