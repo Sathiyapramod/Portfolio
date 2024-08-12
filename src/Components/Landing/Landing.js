@@ -132,20 +132,12 @@ function Landing(props) {
               }}
             >
               <IconButton color="inherit">
-                <a
-                  href={props.data.links.github}
-                  rel="noreferrer"
-                  style={iconStyling}
-                >
+                <a href={props.data.links.github} rel="noreferrer" style={iconStyling}>
                   <GitHubIcon sx={{ fontSize: 30 }} />
                 </a>
               </IconButton>
               <IconButton color="inherit">
-                <a
-                  href={props.data.links.linkedin}
-                  rel="noreferrer"
-                  style={iconStyling}
-                >
+                <a href={props.data.links.linkedin} rel="noreferrer" style={iconStyling}>
                   <LinkedInIcon sx={{ fontSize: 30 }} />
                 </a>
               </IconButton>
@@ -164,7 +156,7 @@ function Landing(props) {
             }}
           >
             <div className="img-thumbnail">
-              <img src={profile} width="250" height="300" alt="profile" />
+              <img src={profile} width="270" height="350" alt="profile" />
             </div>
           </motion.div>
         </div>
