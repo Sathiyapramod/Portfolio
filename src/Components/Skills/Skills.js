@@ -33,7 +33,7 @@ function Skills(props) {
               return (
                 <span className="skill-content" key={index}>
                   <span> ✅ &nbsp; &nbsp;{content.content}</span>
-                  {index >= 1 && index <= 3 && (
+                  {index >= 1 && index <= 4 && (
                     <a href={content.link} style={linkStyling} target="_blank" rel="noreferrer">
                       <IconButton
                         size="small"

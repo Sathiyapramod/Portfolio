@@ -10,7 +10,7 @@
     "span1": "I am ",
     "typertext": ["Full Stack Developer", "Quick Learner"],
     "name": "👋🏻 Sathiyapramod K R",
-    "bio": "Being an Enthusiastic & Competitive Team player, Seeking Jobs on Web Development , blended with knowledge of Front-End and Back-End elements, I am mostly prioritizing on understanding Client Requirements and developing the Web Contents from scratch idea to Final Stage. Currently, I am keenly focusing on Front-End Development.",
+    "bio": "Being an Enthusiastic & Competitive Team player, Seeking Jobs on Web Development , blended with knowledge of Front-End and Back-End elements, I am mostly prioritizing on understanding Client Requirements and developing the Web Contents from scratch idea to Final Stage. Currently, I am keenly focusing on Backend Development.",
     "buttonContent": "LET'S DISCUSS",
     "resumeContent": "https://drive.google.com/file/d/1TxlEpeBA0PGXrwUYagu4tVjSx5CSXMX5/view?usp=sharing",
     "links": {
@@ -28,7 +28,10 @@
       },
       "highlights": [
         {
-          "content": "Currently pursuing Full Stack Development - BootCamp course at GUVI Geeks"
+          "content": "Currently Working as Web Developer At Bengaluru "
+        },
+        {
+          "content": "Completed Full Stack Development Bootcamp Course from GUVI Geeks, Chennai"
         },
         {
           "content": "Enrolled and Completed Javascript Learner Course from GUVI Geeks",
@@ -90,6 +93,10 @@
       {
         "name": "MySQL",
         "image": "https://img.icons8.com/fluency/240w/mysql-logo.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "image": "https://marketplacedesignoye.s3.ap-south-1.amazonaws.com/postgresql-branding-icon-symbol-logo-vector-.png"
       }
     ]
   },
