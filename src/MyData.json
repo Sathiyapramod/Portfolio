@@ -1,212 +1,212 @@
 {
-  "navbar": {
-    "logo": "Sathiyapramod",
-    "links": ["HOME", "SKILLS", "PROJECTS", "CONTACT"],
-    "hireButton": "Hire Me !"
-  },
-  "home": {
-    "tilted": "Hello !",
-    "contentbanner": "About Me ",
-    "span1": "I am ",
-    "typertext": ["Full Stack Developer", "Quick Learner"],
-    "name": "👋🏻 Sathiyapramod K R",
-    "bio": "Being an Enthusiastic & Competitive Team player, Seeking Jobs on Web Development , blended with knowledge of Front-End and Back-End elements, I am mostly prioritizing on understanding Client Requirements and developing the Web Contents from scratch idea to Final Stage. Currently, I am keenly focusing on Backend Development.",
-    "buttonContent": "LET'S DISCUSS",
-    "resumeContent": "https://drive.google.com/file/d/1TxlEpeBA0PGXrwUYagu4tVjSx5CSXMX5/view?usp=sharing",
-    "links": {
-      "github": "https://github.com/Sathiyapramod",
-      "linkedin": "https://www.linkedin.com/in/sathiyapramod/"
+    "navbar": {
+        "logo": "Sathiyapramod",
+        "links": ["HOME", "SKILLS", "PROJECTS", "CONTACT"],
+        "hireButton": "Hire Me !"
     },
-    "scrollNotifier": "Scroll Down"
-  },
-  "skills": {
-    "contentbanner": "My Skills ",
+    "home": {
+        "tilted": "Hello !",
+        "contentbanner": "About Me ",
+        "span1": "I am ",
+        "typertext": ["Full Stack Developer", "Quick Learner"],
+        "name": "👋🏻 Sathiyapramod K R",
+        "bio": "Being an Enthusiastic & Competitive Team player, Seeking Jobs on Web Development , blended with knowledge of Front-End and Back-End elements, I am mostly prioritizing on understanding Client Requirements and developing the Web Contents from scratch idea to Final Stage. Currently, I am keenly focusing on Backend Development.",
+        "buttonContent": "LET'S DISCUSS",
+        "resumeContent": "https://drive.google.com/file/d/1f3oYyYeehif_aiCi6ehOSwYfWd8VXCjC/view?usp=drive_link",
+        "links": {
+            "github": "https://github.com/Sathiyapramod",
+            "linkedin": "https://www.linkedin.com/in/sathiyapramod/"
+        },
+        "scrollNotifier": "Scroll Down"
+    },
     "skills": {
-      "competencies": {
-        "title": "Competencies",
-        "list": ["Team Player", "Avid Learner", "Adaptability"]
-      },
-      "highlights": [
-        {
-          "content": "Currently Working as Web Developer At Bengaluru "
+        "contentbanner": "My Skills ",
+        "skills": {
+            "competencies": {
+                "title": "Competencies",
+                "list": ["Team Player", "Avid Learner", "Adaptability"]
+            },
+            "highlights": [
+                {
+                    "content": "Currently Working as Web Developer At Bengaluru "
+                },
+                {
+                    "content": "Completed Full Stack Development Bootcamp Course from GUVI Geeks, Chennai"
+                },
+                {
+                    "content": "Enrolled and Completed Javascript Learner Course from GUVI Geeks",
+                    "link": "https://www.guvi.in/verify-certificate?id=2z64uM1641872TO823"
+                },
+                {
+                    "content": "Participated in 30days Codekata Challenge organized by GUVI",
+                    "link": "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link"
+                },
+                {
+                    "content": "Enrolled and Completed SQL (Basic) certification from HackerRank",
+                    "link": "https://www.hackerrank.com/certificates/86727671f816"
+                },
+                {
+                    "content": "Having Previous Work Experience as a Civil Engineer/Manager at Larsen & Toubro Limited(2014-2022)"
+                },
+                {
+                    "content": "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu"
+                }
+            ]
         },
-        {
-          "content": "Completed Full Stack Development Bootcamp Course from GUVI Geeks, Chennai"
-        },
-        {
-          "content": "Enrolled and Completed Javascript Learner Course from GUVI Geeks",
-          "link": "https://www.guvi.in/verify-certificate?id=2z64uM1641872TO823"
-        },
-        {
-          "content": "Participated in 30days Codekata Challenge organized by GUVI",
-          "link": "https://drive.google.com/file/d/1dgd1xsC7xkSy9ubHagRVSXBxauh417JZ/view?usp=share_link"
-        },
-        {
-          "content": "Enrolled and Completed SQL (Basic) certification from HackerRank",
-          "link": "https://www.hackerrank.com/certificates/86727671f816"
-        },
-        {
-          "content": "Having Previous Work Experience as a Civil Engineer/Manager at Larsen & Toubro Limited(2014-2022)"
-        },
-        {
-          "content": "Typewriting Senior Grade(English) - certified from DOTE, Govt., of Tamilnadu"
-        }
-      ]
+        "keyskills": [
+            {
+                "name": "HTML",
+                "image": "https://img.icons8.com/color/256/html-5.png"
+            },
+            {
+                "name": "CSS",
+                "image": "https://img.icons8.com/color/256/css3.png"
+            },
+            {
+                "name": "Javascript",
+                "image": "https://img.icons8.com/fluency/256/javascript.png"
+            },
+            {
+                "name": "BootStrap",
+                "image": "https://img.icons8.com/color/256/bootstrap.png"
+            },
+            {
+                "name": "MongoDB",
+                "image": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"
+            },
+            {
+                "name": "React JS",
+                "image": "https://img.icons8.com/color/256/react-native.png"
+            },
+            {
+                "name": "Material UI",
+                "image": "https://img.icons8.com/color/256/material-ui.png"
+            },
+            {
+                "name": "NodeJS (Express)",
+                "image": "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
+            },
+            {
+                "name": "TypeScript",
+                "image": "https://img.icons8.com/?size=160&id=Xf1sHBmY73hA&format=png"
+            },
+            {
+                "name": "MySQL",
+                "image": "https://img.icons8.com/fluency/240w/mysql-logo.png"
+            },
+            {
+                "name": "PostgreSQL",
+                "image": "https://marketplacedesignoye.s3.ap-south-1.amazonaws.com/postgresql-branding-icon-symbol-logo-vector-.png"
+            }
+        ]
     },
-    "keyskills": [
-      {
-        "name": "HTML",
-        "image": "https://img.icons8.com/color/256/html-5.png"
-      },
-      {
-        "name": "CSS",
-        "image": "https://img.icons8.com/color/256/css3.png"
-      },
-      {
-        "name": "Javascript",
-        "image": "https://img.icons8.com/fluency/256/javascript.png"
-      },
-      {
-        "name": "BootStrap",
-        "image": "https://img.icons8.com/color/256/bootstrap.png"
-      },
-      {
-        "name": "MongoDB",
-        "image": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"
-      },
-      {
-        "name": "React JS",
-        "image": "https://img.icons8.com/color/256/react-native.png"
-      },
-      {
-        "name": "Material UI",
-        "image": "https://img.icons8.com/color/256/material-ui.png"
-      },
-      {
-        "name": "NodeJS (Express)",
-        "image": "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
-      },
-      {
-        "name": "TypeScript",
-        "image": "https://img.icons8.com/?size=160&id=Xf1sHBmY73hA&format=png"
-      },
-      {
-        "name": "MySQL",
-        "image": "https://img.icons8.com/fluency/240w/mysql-logo.png"
-      },
-      {
-        "name": "PostgreSQL",
-        "image": "https://marketplacedesignoye.s3.ap-south-1.amazonaws.com/postgresql-branding-icon-symbol-logo-vector-.png"
-      }
-    ]
-  },
-  "projects": {
-    "contentbanner": "My Project",
-    "subheader": "What I Contributed ..!",
-    "projectlists": [
-      {
-        "id": 1,
-        "alt": "Billing App(Desktop)",
-        "category": "MERN",
-        "image": "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGVjb21tZXJjZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
-        "link1Fr": "https://github.com/Sathiyapramod/Inventory-App-frontend",
-        "linkBe": "https://github.com/Sathiyapramod/Inventory-App-backend",
-        "live": "https://capstone-final-sathiyapramod.netlify.app/",
-        "title": "Billing App",
-        "text": "BILLING APP is a beginner level template used for commercial and business use for maintaining Stocks, Bills, Purchase Orders ",
-        "credentials": {
-          "admin": {
-            "username": "sathiya",
-            "password": "123456"
-          },
-          "user": {
-            "username": "steve",
-            "password": "789456"
-          }
-        }
-      },
-      {
-        "id": 1,
-        "alt": "CRM Web App",
-        "category": "MERN",
-        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "link1Fr": "https://github.com/Sathiyapramod/CRM-web-app-frontend",
-        "linkBe": "https://github.com/Sathiyapramod/CRM-App-backend",
-        "live": "https://crm-app-sathiyapramod.netlify.app/",
-        "title": "CRM Web App",
-        "text": "CRM APP is used in maintaining all commercial use for reviewing customer contacts, leads and Service Requests ",
-        "credentials": {
-          "admin": {
-            "username": "sathiya",
-            "password": "123456"
-          },
-          "user": {
-            "username": "john",
-            "password": "456789"
-          }
-        }
-      },
-      {
-        "id": 2,
-        "alt": "To-Do-App",
-        "category": "MERN",
-        "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbmFsJTIwYmxvZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
-        "link1Fr": "https://github.com/Sathiyapramod/To_Do_App",
-        "linkBe": "https://github.com/Sathiyapramod/ToDoApp-backend",
-        "live": "https://todoapp-sathiyapramod.netlify.app/",
-        "title": "To-Do-Manager App",
-        "text": "Simple Design for maintaining and managing the Day-to-Day activities",
-        "credentials": ""
-      },
+    "projects": {
+        "contentbanner": "My Project",
+        "subheader": "What I Contributed ..!",
+        "projectlists": [
+            {
+                "id": 1,
+                "alt": "Billing App(Desktop)",
+                "category": "MERN",
+                "image": "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGVjb21tZXJjZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+                "link1Fr": "https://github.com/Sathiyapramod/Inventory-App-frontend",
+                "linkBe": "https://github.com/Sathiyapramod/Inventory-App-backend",
+                "live": "https://capstone-final-sathiyapramod.netlify.app/",
+                "title": "Billing App",
+                "text": "BILLING APP is a beginner level template used for commercial and business use for maintaining Stocks, Bills, Purchase Orders ",
+                "credentials": {
+                    "admin": {
+                        "username": "sathiya",
+                        "password": "123456"
+                    },
+                    "user": {
+                        "username": "steve",
+                        "password": "789456"
+                    }
+                }
+            },
+            {
+                "id": 1,
+                "alt": "CRM Web App",
+                "category": "MERN",
+                "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                "link1Fr": "https://github.com/Sathiyapramod/CRM-web-app-frontend",
+                "linkBe": "https://github.com/Sathiyapramod/CRM-App-backend",
+                "live": "https://crm-app-sathiyapramod.netlify.app/",
+                "title": "CRM Web App",
+                "text": "CRM APP is used in maintaining all commercial use for reviewing customer contacts, leads and Service Requests ",
+                "credentials": {
+                    "admin": {
+                        "username": "sathiya",
+                        "password": "123456"
+                    },
+                    "user": {
+                        "username": "john",
+                        "password": "456789"
+                    }
+                }
+            },
+            {
+                "id": 2,
+                "alt": "To-Do-App",
+                "category": "MERN",
+                "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbmFsJTIwYmxvZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+                "link1Fr": "https://github.com/Sathiyapramod/To_Do_App",
+                "linkBe": "https://github.com/Sathiyapramod/ToDoApp-backend",
+                "live": "https://todoapp-sathiyapramod.netlify.app/",
+                "title": "To-Do-Manager App",
+                "text": "Simple Design for maintaining and managing the Day-to-Day activities",
+                "credentials": ""
+            },
 
-      {
-        "id": 5,
-        "alt": "Image-Gallery",
-        "category": "FE",
-        "image": "https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1218&q=80",
-        "link1Fr": "https://github.com/Sathiyapramod/Photo_API_Unsplash",
-        "linkBe": "",
-        "live": "https://photo-api-sathiyapramod.netlify.app/",
-        "title": "Image Gallery",
-        "text": "Photo Gallery Made with API Fetch calls from UnSPlash API, Designed with ReactJS and Material UI",
-        "credentials": ""
-      },
-      {
-        "id": 3,
-        "alt": "indiapost",
-        "category": "FE",
-        "image": "https://images.unsplash.com/photo-1578234070702-2dd970cdae30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
-        "link1Fr": "https://github.com/Sathiyapramod/IndiaPost_Simple_PostOffice-API",
-        "linkBe": "",
-        "live": "https://indiapost-sathiyapramod.netlify.app/",
-        "title": "India Post - Get Details of Your Nearest Post Office",
-        "text": "Made with HTML and Bootstrap, User can avail Post Offices Details around their location by simply searching the Place names",
-        "credentials": ""
-      }
-    ],
-    "visitorAction1": "Front-End",
-    "visitorAction2": "Hosting Link",
-    "visitorAction3": "Back-End"
-  },
-  "contact": {
-    "footerheading": "Networking is always Good 😊 !!",
-    "footersubheading": "Share your feedback below",
-    "basicdata": {
-      "formdata": {
-        "name": "Name",
-        "email": "E-mail Id",
-        "message": "Message"
-      },
-      "formAction": "Send Message"
+            {
+                "id": 5,
+                "alt": "Image-Gallery",
+                "category": "FE",
+                "image": "https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1218&q=80",
+                "link1Fr": "https://github.com/Sathiyapramod/Photo_API_Unsplash",
+                "linkBe": "",
+                "live": "https://photo-api-sathiyapramod.netlify.app/",
+                "title": "Image Gallery",
+                "text": "Photo Gallery Made with API Fetch calls from UnSPlash API, Designed with ReactJS and Material UI",
+                "credentials": ""
+            },
+            {
+                "id": 3,
+                "alt": "indiapost",
+                "category": "FE",
+                "image": "https://images.unsplash.com/photo-1578234070702-2dd970cdae30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+                "link1Fr": "https://github.com/Sathiyapramod/IndiaPost_Simple_PostOffice-API",
+                "linkBe": "",
+                "live": "https://indiapost-sathiyapramod.netlify.app/",
+                "title": "India Post - Get Details of Your Nearest Post Office",
+                "text": "Made with HTML and Bootstrap, User can avail Post Offices Details around their location by simply searching the Place names",
+                "credentials": ""
+            }
+        ],
+        "visitorAction1": "Front-End",
+        "visitorAction2": "Hosting Link",
+        "visitorAction3": "Back-End"
     },
-    "Mydetails": {
-      "myemailId": "sathiyapramod22@gmail.com",
-      "myphoneNo": "+91 9597097508",
-      "visitorAction1": "DOWNLOAD RESUME"
-    },
-    "githublink": "https://github.com/Sathiyapramod",
-    "linkedinProfile": "https://www.linkedin.com/in/sathiyapramod/",
-    "scrollAction": "Go Back to Top",
-    "Copyrights": "Made by Sathiyapramod with 😊 | 2024 | All Rights Reserved"
-  }
+    "contact": {
+        "footerheading": "Networking is always Good 😊 !!",
+        "footersubheading": "Share your feedback below",
+        "basicdata": {
+            "formdata": {
+                "name": "Name",
+                "email": "E-mail Id",
+                "message": "Message"
+            },
+            "formAction": "Send Message"
+        },
+        "Mydetails": {
+            "myemailId": "sathiyapramod22@gmail.com",
+            "myphoneNo": "+91 9597097508",
+            "visitorAction1": "DOWNLOAD RESUME"
+        },
+        "githublink": "https://github.com/Sathiyapramod",
+        "linkedinProfile": "https://www.linkedin.com/in/sathiyapramod/",
+        "scrollAction": "Go Back to Top",
+        "Copyrights": "Made by Sathiyapramod with 😊 | 2024 | All Rights Reserved"
+    }
 }
